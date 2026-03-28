@@ -201,12 +201,44 @@ main { padding: 1.5rem 2rem; max-width: 1500px; margin: 0 auto; }
   .cal-wrap { grid-template-columns: 1fr; }
   .header-meta { display: none; }
 }
+/* ── PASSWORD GATE ──────────────────────────────────────────────────── */
+#pw-gate {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 16px;
+}
+#pw-gate.hidden { display: none; }
+#pw-gate label { font-size: 13px; color: var(--text2); letter-spacing: 0.05em; }
+#pw-gate input {
+  padding: 8px 14px; width: 260px;
+  background: var(--surface2); border: 0.5px solid var(--border2);
+  border-radius: 6px; color: var(--text); font-size: 14px;
+  font-family: var(--font); outline: none; text-align: center;
+}
+#pw-gate input:focus { border-color: #444; }
+#pw-gate button {
+  padding: 7px 28px; border-radius: 6px; border: none;
+  background: var(--accent); color: #000; font-size: 13px;
+  font-weight: 600; cursor: pointer; font-family: var(--font);
+}
+#pw-gate .pw-error { color: #e07070; font-size: 12px; min-height: 18px; }
+#app-root.locked { visibility: hidden; }
 </style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<div id="pw-gate">
+  <label>Enter password to continue</label>
+  <input type="password" id="pw-input" placeholder="Password" autofocus
+    onkeydown="if(event.key==='Enter')checkPw()">
+  <button onclick="checkPw()">Enter</button>
+  <div class="pw-error" id="pw-error"></div>
+</div>
+
+<div id="app-root" class="locked">
 <header>
   <div class="header-top">
     <div class="logo">Cultural <span>Calendar 2026</span></div>
@@ -534,6 +566,26 @@ function updateMeta(count) {
   const section = CATEGORY_DEFS.find(d => d.id === state.activeSection);
   document.getElementById('header-meta').textContent =
     `${section?.label || ''} · ${count} event${count!==1?'s':''}`;
+}
+</script>
+</div><!-- end app-root -->
+
+<script>
+function checkPw() {
+  const input = document.getElementById('pw-input');
+  if (input.value === 'MariRocks') {
+    document.getElementById('pw-gate').classList.add('hidden');
+    document.getElementById('app-root').classList.remove('locked');
+    sessionStorage.setItem('pw-ok', '1');
+  } else {
+    document.getElementById('pw-error').textContent = 'Incorrect password';
+    input.value = '';
+    input.focus();
+  }
+}
+if (sessionStorage.getItem('pw-ok') === '1') {
+  document.getElementById('pw-gate').classList.add('hidden');
+  document.getElementById('app-root').classList.remove('locked');
 }
 </script>
 </body>
