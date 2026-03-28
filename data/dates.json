@@ -3,7 +3,7 @@
     "category": "dates",
     "label": "Important Dates",
     "color": "#d4a06a",
-    "last_updated": "2026-03-27"
+    "last_updated": "2026-03-28"
   },
   "categories": [
     { "id": "brazil-dates", "label": "Brasil",  "color": "#4dcca0" },
@@ -20,6 +20,33 @@
       "date_sort": "2026-01-01",
       "location": "Brasil",
       "note": "Feriado nacional"
+    },
+    {
+      "id": "br-dia-fotografo",
+      "cat": "brazil-dates",
+      "name": "Dia do Fotógrafo",
+      "date": "Jan 8, 2026",
+      "date_sort": "2026-01-08",
+      "location": "Brasil",
+      "note": "Chegada do daguerreótipo ao Brasil (1840)"
+    },
+    {
+      "id": "br-dia-compositor-mundial",
+      "cat": "brazil-dates",
+      "name": "Dia Mundial do Compositor",
+      "date": "Jan 15, 2026",
+      "date_sort": "2026-01-15",
+      "location": "Brasil",
+      "note": "Data internacional celebrada no Brasil"
+    },
+    {
+      "id": "br-dia-quadrinho",
+      "cat": "brazil-dates",
+      "name": "Dia do Quadrinho Nacional",
+      "date": "Jan 30, 2026",
+      "date_sort": "2026-01-30",
+      "location": "Brasil",
+      "note": "Homenagem a Angelo Agostini, precursor das HQs no Brasil (1869)"
     },
     {
       "id": "us-new-year",
@@ -103,6 +130,15 @@
       "note": "Ponto facultativo até meio-dia"
     },
     {
+      "id": "br-dia-musica-classica",
+      "cat": "brazil-dates",
+      "name": "Dia Nacional da Música Clássica",
+      "date": "Mar 5, 2026",
+      "date_sort": "2026-03-05",
+      "location": "Brasil",
+      "note": ""
+    },
+    {
       "id": "br-dia-mulher",
       "cat": "brazil-dates",
       "name": "Dia Internacional da Mulher",
@@ -110,6 +146,51 @@
       "date_sort": "2026-03-08",
       "location": "Brasil",
       "note": ""
+    },
+    {
+      "id": "br-dia-dj",
+      "cat": "brazil-dates",
+      "name": "Dia Mundial do DJ",
+      "date": "Mar 9, 2026",
+      "date_sort": "2026-03-09",
+      "location": "Brasil",
+      "note": "Data internacional (World DJ Fund Foundation, 2002)"
+    },
+    {
+      "id": "br-dia-poesia-nacional",
+      "cat": "brazil-dates",
+      "name": "Dia Nacional da Poesia",
+      "date": "Mar 14, 2026",
+      "date_sort": "2026-03-14",
+      "location": "Brasil",
+      "note": "Nascimento de Castro Alves"
+    },
+    {
+      "id": "br-dia-poesia-mundial",
+      "cat": "brazil-dates",
+      "name": "Dia Mundial da Poesia",
+      "date": "Mar 21, 2026",
+      "date_sort": "2026-03-21",
+      "location": "Brasil",
+      "note": "Data UNESCO"
+    },
+    {
+      "id": "br-dia-teatro",
+      "cat": "brazil-dates",
+      "name": "Dia Mundial do Teatro",
+      "date": "Mar 27, 2026",
+      "date_sort": "2026-03-27",
+      "location": "Brasil",
+      "note": "Data UNESCO (desde 1961)"
+    },
+    {
+      "id": "br-dia-circo",
+      "cat": "brazil-dates",
+      "name": "Dia do Circo",
+      "date": "Mar 27, 2026",
+      "date_sort": "2026-03-27",
+      "location": "Brasil",
+      "note": "Homenagem ao palhaço Piolin (Abelardo Pinto)"
     },
     {
       "id": "eu-intl-womens-day",
@@ -193,6 +274,15 @@
       "note": "Public holiday across most of Europe"
     },
     {
+      "id": "br-dia-livro-infantil",
+      "cat": "brazil-dates",
+      "name": "Dia Nacional do Livro Infantil",
+      "date": "Abr 18, 2026",
+      "date_sort": "2026-04-18",
+      "location": "Brasil",
+      "note": "Nascimento de Monteiro Lobato"
+    },
+    {
       "id": "br-tiradentes",
       "cat": "brazil-dates",
       "name": "Tiradentes",
@@ -200,6 +290,24 @@
       "date_sort": "2026-04-21",
       "location": "Brasil",
       "note": "Feriado nacional — homenagem ao mártir da Inconfidência Mineira"
+    },
+    {
+      "id": "br-dia-design-grafico",
+      "cat": "brazil-dates",
+      "name": "Dia Mundial do Design Gráfico",
+      "date": "Abr 27, 2026",
+      "date_sort": "2026-04-27",
+      "location": "Brasil",
+      "note": "Fundação do Icograda — data internacional"
+    },
+    {
+      "id": "br-dia-danca",
+      "cat": "brazil-dates",
+      "name": "Dia Mundial da Dança",
+      "date": "Abr 29, 2026",
+      "date_sort": "2026-04-29",
+      "location": "Brasil",
+      "note": "Data UNESCO/CID — nascimento de Jean-Georges Noverre"
     },
     {
       "id": "br-dia-trabalho",
@@ -227,6 +335,24 @@
       "date_sort": "2026-05-09",
       "location": "European Union",
       "note": "Celebrates peace and unity in Europe"
+    },
+    {
+      "id": "br-dia-sertanejo",
+      "cat": "brazil-dates",
+      "name": "Dia do Sertanejo",
+      "date": "Mai 3, 2026",
+      "date_sort": "2026-05-03",
+      "location": "Brasil",
+      "note": ""
+    },
+    {
+      "id": "br-dia-artista-plastico",
+      "cat": "brazil-dates",
+      "name": "Dia do Artista Plástico",
+      "date": "Mai 8, 2026",
+      "date_sort": "2026-05-08",
+      "location": "Brasil",
+      "note": "Nascimento de Almeida Júnior (1850)"
     },
     {
       "id": "br-dia-maes",
@@ -292,6 +418,24 @@
       "note": "Dia dos Namorados no Brasil (equivalente ao Valentine's Day)"
     },
     {
+      "id": "br-dia-cinema",
+      "cat": "brazil-dates",
+      "name": "Dia do Cinema Brasileiro",
+      "date": "Jun 19, 2026",
+      "date_sort": "2026-06-19",
+      "location": "Brasil",
+      "note": "Primeira filmagem de Affonso Segretto no Brasil (1898)"
+    },
+    {
+      "id": "br-dia-musica-intl",
+      "cat": "brazil-dates",
+      "name": "Dia Internacional da Música (Fête de la Musique)",
+      "date": "Jun 21, 2026",
+      "date_sort": "2026-06-21",
+      "location": "Brasil",
+      "note": "Originada na França (1982), celebrada mundialmente"
+    },
+    {
       "id": "br-festas-juninas",
       "cat": "brazil-dates",
       "name": "Festas Juninas",
@@ -346,6 +490,33 @@
       "note": "Fête nationale française"
     },
     {
+      "id": "br-dia-rock",
+      "cat": "brazil-dates",
+      "name": "Dia Mundial do Rock",
+      "date": "Jul 13, 2026",
+      "date_sort": "2026-07-13",
+      "location": "Brasil",
+      "note": "Celebrado quase exclusivamente no Brasil — inspirado pelo Live Aid (1985)"
+    },
+    {
+      "id": "br-dia-escritor",
+      "cat": "brazil-dates",
+      "name": "Dia do Escritor",
+      "date": "Jul 25, 2026",
+      "date_sort": "2026-07-25",
+      "location": "Brasil",
+      "note": "1º Festival do Escritor Brasileiro (1960)"
+    },
+    {
+      "id": "br-dia-rap",
+      "cat": "brazil-dates",
+      "name": "Dia do Rap Nacional",
+      "date": "Ago 6, 2026",
+      "date_sort": "2026-08-06",
+      "location": "Brasil",
+      "note": "Lei Federal 13.577/2017 — homenagem ao Racionais MC's"
+    },
+    {
       "id": "br-dia-pais",
       "cat": "brazil-dates",
       "name": "Dia dos Pais",
@@ -353,6 +524,51 @@
       "date_sort": "2026-08-09",
       "location": "Brasil",
       "note": "Segundo domingo de agosto"
+    },
+    {
+      "id": "br-dia-artes",
+      "cat": "brazil-dates",
+      "name": "Dia Nacional das Artes",
+      "date": "Ago 12, 2026",
+      "date_sort": "2026-08-12",
+      "location": "Brasil",
+      "note": ""
+    },
+    {
+      "id": "br-dia-patrimonio",
+      "cat": "brazil-dates",
+      "name": "Dia Nacional do Patrimônio Cultural",
+      "date": "Ago 17, 2026",
+      "date_sort": "2026-08-17",
+      "location": "Brasil",
+      "note": "Nascimento de Rodrigo Melo Franco de Andrade, primeiro presidente do IPHAN"
+    },
+    {
+      "id": "br-dia-ator",
+      "cat": "brazil-dates",
+      "name": "Dia do Ator / Dia da Atriz",
+      "date": "Ago 19, 2026",
+      "date_sort": "2026-08-19",
+      "location": "Brasil",
+      "note": "Decreto-Lei 6.533/1978. Também Dia Mundial da Fotografia"
+    },
+    {
+      "id": "br-dia-folclore",
+      "cat": "brazil-dates",
+      "name": "Dia do Folclore",
+      "date": "Ago 22, 2026",
+      "date_sort": "2026-08-22",
+      "location": "Brasil",
+      "note": ""
+    },
+    {
+      "id": "br-dia-artista",
+      "cat": "brazil-dates",
+      "name": "Dia do Artista",
+      "date": "Ago 23, 2026",
+      "date_sort": "2026-08-23",
+      "location": "Brasil",
+      "note": ""
     },
     {
       "id": "eu-assumption",
@@ -391,6 +607,24 @@
       "note": "World's largest folk festival"
     },
     {
+      "id": "br-dia-musica-mundial",
+      "cat": "brazil-dates",
+      "name": "Dia Mundial da Música",
+      "date": "Out 1, 2026",
+      "date_sort": "2026-10-01",
+      "location": "Brasil",
+      "note": "Data UNESCO"
+    },
+    {
+      "id": "br-dia-compositor",
+      "cat": "brazil-dates",
+      "name": "Dia do Compositor Brasileiro",
+      "date": "Out 7, 2026",
+      "date_sort": "2026-10-07",
+      "location": "Brasil",
+      "note": ""
+    },
+    {
       "id": "br-nossa-senhora",
       "cat": "brazil-dates",
       "name": "Nossa Senhora Aparecida",
@@ -398,6 +632,15 @@
       "date_sort": "2026-10-12",
       "location": "Brasil",
       "note": "Feriado nacional — Padroeira do Brasil. Também Dia das Crianças"
+    },
+    {
+      "id": "br-dia-mpb",
+      "cat": "brazil-dates",
+      "name": "Dia Nacional da MPB",
+      "date": "Out 17, 2026",
+      "date_sort": "2026-10-17",
+      "location": "Brasil",
+      "note": "Lei 12.624/2012 — nascimento de Chiquinha Gonzaga"
     },
     {
       "id": "br-dia-criancas",
@@ -463,6 +706,15 @@
       "note": "Feriado nacional"
     },
     {
+      "id": "br-dia-cultura",
+      "cat": "brazil-dates",
+      "name": "Dia Nacional da Cultura",
+      "date": "Nov 5, 2026",
+      "date_sort": "2026-11-05",
+      "location": "Brasil",
+      "note": "Nascimento de Rui Barbosa. Também Dia do Designer Gráfico (nascimento de Aloisio Magalhães)"
+    },
+    {
       "id": "us-veterans-day",
       "cat": "us-dates",
       "name": "Veterans Day",
@@ -488,6 +740,15 @@
       "date_sort": "2026-11-20",
       "location": "Brasil",
       "note": "Feriado nacional desde 2024"
+    },
+    {
+      "id": "br-dia-musico",
+      "cat": "brazil-dates",
+      "name": "Dia do Músico",
+      "date": "Nov 22, 2026",
+      "date_sort": "2026-11-22",
+      "location": "Brasil",
+      "note": "Dia de Santa Cecília, padroeira dos músicos"
     },
     {
       "id": "br-proclamacao-republica",
@@ -533,6 +794,15 @@
       "date_sort": "2026-12-08",
       "location": "Spain, Italy, Portugal",
       "note": "Public holiday in several Catholic countries"
+    },
+    {
+      "id": "br-dia-samba",
+      "cat": "brazil-dates",
+      "name": "Dia Nacional do Samba",
+      "date": "Dez 2, 2026",
+      "date_sort": "2026-12-02",
+      "location": "Brasil",
+      "note": "Nascimento de Ary Barroso"
     },
     {
       "id": "br-natal",
