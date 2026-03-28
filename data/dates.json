@@ -8,7 +8,8 @@
   "categories": [
     { "id": "brazil-dates", "label": "Brasil",  "color": "#4dcca0" },
     { "id": "us-dates",     "label": "United States", "color": "#6ab0f5" },
-    { "id": "europe-dates", "label": "Europe",  "color": "#e0a840" }
+    { "id": "europe-dates", "label": "Europe",  "color": "#e0a840" },
+    { "id": "asia-dates",   "label": "Asia",    "color": "#e07070" }
   ],
   "events": [
     {
@@ -595,6 +596,259 @@
       "date_sort": "2026-12-31",
       "location": "Europe",
       "note": "Called Silvester in Germany, Austria, Switzerland"
+    },
+
+    {
+      "id": "asia-new-year",
+      "cat": "asia-dates",
+      "name": "New Year's Day",
+      "date": "Jan 1, 2026",
+      "date_sort": "2026-01-01",
+      "location": "Asia",
+      "note": "Public holiday across most Asian countries"
+    },
+    {
+      "id": "asia-coming-of-age",
+      "cat": "asia-dates",
+      "name": "Coming of Age Day (Japan)",
+      "date": "Jan 12, 2026",
+      "date_sort": "2026-01-12",
+      "location": "Japan",
+      "note": "成人の日 — Second Monday of January"
+    },
+    {
+      "id": "asia-republic-day-india",
+      "cat": "asia-dates",
+      "name": "Republic Day (India)",
+      "date": "Jan 26, 2026",
+      "date_sort": "2026-01-26",
+      "location": "India",
+      "note": "National holiday celebrating the Constitution of India"
+    },
+    {
+      "id": "asia-lunar-new-year",
+      "cat": "asia-dates",
+      "name": "Lunar New Year / Chinese New Year",
+      "date": "Feb 17, 2026",
+      "date_sort": "2026-02-17",
+      "location": "China, South Korea, Vietnam, Singapore",
+      "note": "Year of the Horse — 春节 (China), 설날 Seollal (Korea), Tết (Vietnam)"
+    },
+    {
+      "id": "asia-lantern-festival",
+      "cat": "asia-dates",
+      "name": "Lantern Festival",
+      "date": "Mar 3, 2026",
+      "date_sort": "2026-03-03",
+      "location": "China, Taiwan",
+      "note": "元宵节 — 15th day of the first lunar month"
+    },
+    {
+      "id": "asia-hinamatsuri",
+      "cat": "asia-dates",
+      "name": "Hinamatsuri / Girls' Day (Japan)",
+      "date": "Mar 3, 2026",
+      "date_sort": "2026-03-03",
+      "location": "Japan",
+      "note": "ひな祭り — Doll Festival"
+    },
+    {
+      "id": "asia-holi",
+      "cat": "asia-dates",
+      "name": "Holi",
+      "date": "Mar 10, 2026",
+      "date_sort": "2026-03-10",
+      "location": "India, Nepal",
+      "note": "Festival of Colors — Hindu spring celebration"
+    },
+    {
+      "id": "asia-nowruz",
+      "cat": "asia-dates",
+      "name": "Nowruz (Persian New Year)",
+      "date": "Mar 20, 2026",
+      "date_sort": "2026-03-20",
+      "location": "Iran, Central Asia",
+      "note": "Persian New Year — spring equinox celebration"
+    },
+    {
+      "id": "asia-qingming",
+      "cat": "asia-dates",
+      "name": "Qingming Festival (Tomb Sweeping Day)",
+      "date": "Apr 5, 2026",
+      "date_sort": "2026-04-05",
+      "location": "China, Taiwan",
+      "note": "清明节 — Day to honor ancestors"
+    },
+    {
+      "id": "asia-songkran",
+      "cat": "asia-dates",
+      "name": "Songkran (Thai New Year)",
+      "date": "Apr 13 – 15, 2026",
+      "date_sort": "2026-04-13",
+      "location": "Thailand",
+      "note": "Water Festival — Thai traditional New Year"
+    },
+    {
+      "id": "asia-golden-week-japan",
+      "cat": "asia-dates",
+      "name": "Golden Week (Japan)",
+      "date": "Apr 29 – May 5, 2026",
+      "date_sort": "2026-04-29",
+      "location": "Japan",
+      "note": "Series of national holidays: Shōwa Day, Constitution Day, Greenery Day, Children's Day"
+    },
+    {
+      "id": "asia-vesak",
+      "cat": "asia-dates",
+      "name": "Vesak / Buddha Day",
+      "date": "May 12, 2026",
+      "date_sort": "2026-05-12",
+      "location": "Southeast Asia, Sri Lanka, Nepal",
+      "note": "Celebrates the birth, enlightenment, and death of Buddha"
+    },
+    {
+      "id": "asia-dragon-boat",
+      "cat": "asia-dates",
+      "name": "Dragon Boat Festival",
+      "date": "May 31, 2026",
+      "date_sort": "2026-05-31",
+      "location": "China, Taiwan, Hong Kong",
+      "note": "端午节 — 5th day of the 5th lunar month"
+    },
+    {
+      "id": "asia-eid-al-fitr",
+      "cat": "asia-dates",
+      "name": "Eid al-Fitr",
+      "date": "Mar 20 – 21, 2026",
+      "date_sort": "2026-03-20",
+      "location": "Indonesia, Malaysia, South Asia, Middle East",
+      "note": "End of Ramadan — dates approximate, based on lunar calendar"
+    },
+    {
+      "id": "asia-eid-al-adha",
+      "cat": "asia-dates",
+      "name": "Eid al-Adha",
+      "date": "May 27 – 28, 2026",
+      "date_sort": "2026-05-27",
+      "location": "Indonesia, Malaysia, South Asia, Middle East",
+      "note": "Festival of Sacrifice — dates approximate, based on lunar calendar"
+    },
+    {
+      "id": "asia-independence-india",
+      "cat": "asia-dates",
+      "name": "Independence Day (India)",
+      "date": "Aug 15, 2026",
+      "date_sort": "2026-08-15",
+      "location": "India",
+      "note": "National holiday — independence from British rule (1947)"
+    },
+    {
+      "id": "asia-obon",
+      "cat": "asia-dates",
+      "name": "Obon",
+      "date": "Aug 13 – 16, 2026",
+      "date_sort": "2026-08-13",
+      "location": "Japan",
+      "note": "お盆 — Buddhist festival honoring the spirits of ancestors"
+    },
+    {
+      "id": "asia-independence-korea",
+      "cat": "asia-dates",
+      "name": "National Liberation Day (South Korea)",
+      "date": "Aug 15, 2026",
+      "date_sort": "2026-08-15",
+      "location": "South Korea",
+      "note": "광복절 — Liberation from Japanese rule (1945)"
+    },
+    {
+      "id": "asia-mid-autumn",
+      "cat": "asia-dates",
+      "name": "Mid-Autumn Festival",
+      "date": "Sep 27, 2026",
+      "date_sort": "2026-09-27",
+      "location": "China, Taiwan, Vietnam, South Korea",
+      "note": "中秋节 — Mooncake Festival. Also 추석 Chuseok in Korea"
+    },
+    {
+      "id": "asia-chuseok",
+      "cat": "asia-dates",
+      "name": "Chuseok (Korean Thanksgiving)",
+      "date": "Sep 26 – 28, 2026",
+      "date_sort": "2026-09-26",
+      "location": "South Korea",
+      "note": "추석 — Three-day harvest festival"
+    },
+    {
+      "id": "asia-gandhi-jayanti",
+      "cat": "asia-dates",
+      "name": "Gandhi Jayanti",
+      "date": "Oct 2, 2026",
+      "date_sort": "2026-10-02",
+      "location": "India",
+      "note": "Birth anniversary of Mahatma Gandhi — national holiday"
+    },
+    {
+      "id": "asia-national-day-china",
+      "cat": "asia-dates",
+      "name": "National Day / Golden Week (China)",
+      "date": "Oct 1 – 7, 2026",
+      "date_sort": "2026-10-01",
+      "location": "China",
+      "note": "国庆节 — Founding of the People's Republic (1949)"
+    },
+    {
+      "id": "asia-diwali",
+      "cat": "asia-dates",
+      "name": "Diwali",
+      "date": "Oct 20, 2026",
+      "date_sort": "2026-10-20",
+      "location": "India, Nepal, Singapore, Malaysia",
+      "note": "Festival of Lights — one of the most important Hindu celebrations"
+    },
+    {
+      "id": "asia-shichi-go-san",
+      "cat": "asia-dates",
+      "name": "Shichi-Go-San (Japan)",
+      "date": "Nov 15, 2026",
+      "date_sort": "2026-11-15",
+      "location": "Japan",
+      "note": "七五三 — Festival for children aged 3, 5, and 7"
+    },
+    {
+      "id": "asia-loy-krathong",
+      "cat": "asia-dates",
+      "name": "Loy Krathong",
+      "date": "Nov 5, 2026",
+      "date_sort": "2026-11-05",
+      "location": "Thailand",
+      "note": "Festival of floating lanterns on waterways"
+    },
+    {
+      "id": "asia-emperor-birthday",
+      "cat": "asia-dates",
+      "name": "Emperor's Birthday (Japan)",
+      "date": "Feb 23, 2026",
+      "date_sort": "2026-02-23",
+      "location": "Japan",
+      "note": "天皇誕生日 — National holiday"
+    },
+    {
+      "id": "asia-national-day-singapore",
+      "cat": "asia-dates",
+      "name": "National Day (Singapore)",
+      "date": "Aug 9, 2026",
+      "date_sort": "2026-08-09",
+      "location": "Singapore",
+      "note": "Independence from Malaysia (1965)"
+    },
+    {
+      "id": "asia-new-years-eve",
+      "cat": "asia-dates",
+      "name": "New Year's Eve",
+      "date": "Dec 31, 2026",
+      "date_sort": "2026-12-31",
+      "location": "Asia",
+      "note": ""
     }
   ]
 }
