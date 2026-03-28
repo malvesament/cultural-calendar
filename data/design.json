@@ -3,13 +3,60 @@
     "category": "design",
     "label": "Design",
     "color": "#4dcca0",
-    "last_updated": "2026-03-27"
+    "last_updated": "2026-03-28"
   },
   "categories": [
-    { "id": "design-fair",    "label": "Design Fairs & Weeks",    "color": "#4dcca0" },
-    { "id": "design-award",   "label": "Awards & Prizes",         "color": "#e0a840" },
-    { "id": "design-industry","label": "Industry Events",         "color": "#909088" },
-    { "id": "brazil-design",  "label": "Brazil Design Events",    "color": "#6ab0f5" }
+    { "id": "intl-fair",    "label": "Design Weeks & Fairs – International", "color": "#4dcca0" },
+    { "id": "brazil-fair",  "label": "Semanas & Feiras de Design – Brasil",  "color": "#6ab0f5" },
+    { "id": "intl-award",   "label": "Awards – International",               "color": "#e0a840" },
+    { "id": "brazil-award", "label": "Premiações – Brasil",                  "color": "#e07850" },
+    { "id": "industry",     "label": "Industry Events",                      "color": "#909088" }
   ],
-  "events": []
+  "events": [
+
+    { "id": "designto-2026", "cat": "intl-fair", "name": "DesignTO Festival (16th)", "date": "Jan 23 – Feb 1", "date_sort": "2026-01-23", "location": "Toronto, Canada", "note": "Canada's largest annual design festival — 100+ free events and exhibitions across the city." },
+    { "id": "tokyo-creative-salon-2026", "cat": "intl-fair", "name": "Tokyo Creative Salon", "date": "Mar 13–22", "date_sort": "2026-03-13", "location": "Tokyo, Japan", "note": "City-wide fashion and design event spanning nine districts of Tokyo." },
+    { "id": "milan-design-week-2026", "cat": "intl-fair", "name": "Milan Design Week / Salone del Mobile", "date": "Apr 20–26", "date_sort": "2026-04-20", "location": "Milan, Italy", "note": "The world's leading furniture fair and design week. Salone del Mobile runs Apr 21–26 at Rho Fiera; Fuorisalone events across the city from Apr 20." },
+    { "id": "nycxdesign-2026", "cat": "intl-fair", "name": "NYCxDesign (14th)", "date": "May 14–20", "date_sort": "2026-05-14", "location": "New York, USA", "note": "Multi-disciplinary festival spanning architecture, technology, product, graphic, urban, industrial, and interior design." },
+    { "id": "melbourne-design-week-2026", "cat": "intl-fair", "name": "Melbourne Design Week (10th)", "date": "May 14–24", "date_sort": "2026-05-14", "location": "Melbourne, Australia", "note": "10th anniversary edition — 400+ events celebrating design, with themes of futuristic tech, Indigenous design, and architecture." },
+    { "id": "3-days-of-design-2026", "cat": "intl-fair", "name": "3 Days of Design", "date": "Jun 10–12", "date_sort": "2026-06-10", "location": "Copenhagen, Denmark", "note": "International design festival celebrating Scandinavian and contemporary design across multiple venues." },
+    { "id": "helsinki-design-week-2026", "cat": "intl-fair", "name": "Helsinki Design Week (21st)", "date": "Aug 28 – Sep 6", "date_sort": "2026-08-28", "location": "Helsinki, Finland", "note": "21st anniversary — 250+ events including open studios, exhibitions, talks, fashion shows, and parties." },
+    { "id": "paris-design-week-2026", "cat": "intl-fair", "name": "Paris Design Week", "date": "Sep 10–19", "date_sort": "2026-09-10", "location": "Paris, France", "note": "10-day fringe design event running alongside Maison et Objet September edition." },
+    { "id": "london-design-festival-2026", "cat": "intl-fair", "name": "London Design Festival (24th)", "date": "Sep 12–20", "date_sort": "2026-09-12", "location": "London, UK", "note": "Annual festival celebrating design disciplines including architecture, technology, and art." },
+    { "id": "vienna-design-week-2026", "cat": "intl-fair", "name": "Vienna Design Week (20th)", "date": "Sep 25 – Oct 4", "date_sort": "2026-09-25", "location": "Vienna, Austria", "note": "20th edition — Austria's most important multidisciplinary and curated design festival." },
+    { "id": "dutch-design-week-2026", "cat": "intl-fair", "name": "Dutch Design Week", "date": "Oct 17–25", "date_sort": "2026-10-17", "location": "Eindhoven, Netherlands", "note": "Northern Europe's largest design event — 2,000+ designers, 350,000+ visitors, 100+ locations." },
+    { "id": "design-miami-paris-2026", "cat": "intl-fair", "name": "Design Miami/ Paris", "date": "Oct 20–25", "date_sort": "2026-10-20", "location": "Paris, France", "note": "Leading international fair for modern and contemporary collectible design." },
+    { "id": "designart-tokyo-2026", "cat": "intl-fair", "name": "Designart Tokyo", "date": "Oct 30 – Nov 8", "date_sort": "2026-10-30", "location": "Tokyo, Japan", "note": "Tokyo's largest fall design event spanning multiple districts." },
+    { "id": "dubai-design-week-2026", "cat": "intl-fair", "name": "Dubai Design Week", "date": "Nov 3–8", "date_sort": "2026-11-03", "location": "Dubai, UAE", "note": "Annual celebration of design innovation in the Middle East." },
+    { "id": "design-miami-2026", "cat": "intl-fair", "name": "Design Miami/ (22nd)", "date": "Dec 1–6", "date_sort": "2026-12-01", "location": "Miami Beach, USA", "note": "22nd edition at Pride Park — leading international fair for modern and contemporary collectible design, running alongside Art Basel Miami Beach." },
+    { "id": "stockholm-design-week-note", "cat": "intl-fair", "name": "Stockholm Design Week / Furniture Fair", "date": "Cancelada em 2026 — retorna em 2027", "date_sort": "2026-02-01", "location": "Stockholm, Sweden", "note": "Cancelled for 2026; moving to biennial format starting 2027. In 2025, ran Feb 4–8. Grassroots Stockholm Creative Edition (Feb 3–7, 2026) organized by Swedish brands as an alternative." },
+    { "id": "beijing-design-week-note", "cat": "intl-fair", "name": "Beijing Design Week", "date": "2026 dates TBD", "date_sort": "2026-09-25", "location": "Beijing, China", "note": "Major annual design event. Typically held Sep–Oct. In 2025, ran Sep 25 – Oct 7. No official 2026 dates announced." },
+
+    { "id": "dw-sao-paulo-2026", "cat": "brazil-fair", "name": "DW! Semana de Design de São Paulo (15ª)", "date": "Mar 5–22", "date_sort": "2026-03-05", "location": "São Paulo, Brasil", "note": "O maior festival de design urbano da América Latina. 15ª edição com 120+ expositores em lojas, galerias, espaços criativos e centros culturais pela cidade." },
+    { "id": "rio2c-2026", "cat": "brazil-fair", "name": "Rio2C – Rio Creative Conference", "date": "Mai 26–31", "date_sort": "2026-05-26", "location": "Rio de Janeiro, Brasil", "note": "Principal evento de criatividade do Brasil com Summit, Conferência, Mercados e Festivalia na Cidade das Artes." },
+    { "id": "casacor-sp-2026", "cat": "brazil-fair", "name": "Casa Cor São Paulo", "date": "Jun 2 – Ago 9", "date_sort": "2026-06-02", "location": "Parque da Água Branca, São Paulo, Brasil", "note": "Mostra de 65+ ambientes contemplando arquitetura, design de interiores, paisagismo, arte, lojas e restaurantes." },
+    { "id": "high-design-expo-2026", "cat": "brazil-fair", "name": "High Design Expo", "date": "Datas 2026 a confirmar", "date_sort": "2026-08-01", "location": "São Paulo, Brasil", "note": "15.000 m² dedicados a design de mobiliário, lançamentos, inovações e tendências para arquitetos, designers de interiores e compradores. Em 2025, realizado em agosto. Datas de 2026 ainda não confirmadas." },
+
+    { "id": "wallpaper-awards-2026", "cat": "intl-award", "name": "Wallpaper* Design Awards", "date": "Winners Jan 2026", "date_sort": "2026-01-15", "location": "London, UK", "note": "Annual awards by Wallpaper* magazine covering architecture, art, fashion, interiors, tech, and travel. Featured in Feb 2026 issue." },
+    { "id": "core77-awards-2026", "cat": "intl-award", "name": "Core77 Design Awards", "date": "Deadline Mar 28", "date_sort": "2026-03-28", "location": "New York, USA", "note": "Honors projects across 20 design disciplines. Early bird deadline Jan 31; regular Feb 28; final Mar 28." },
+    { "id": "if-design-award-2026", "cat": "intl-award", "name": "iF Design Award Ceremony", "date": "Apr 27", "date_sort": "2026-04-27", "location": "Friedrichstadt-Palast, Berlin, Germany", "note": "iF Design Award Night. Final jury Feb 10–12 in Hamburg. Trend Conference follows Apr 28." },
+    { "id": "a-design-award-2026", "cat": "intl-award", "name": "A' Design Award — Results", "date": "May 1", "date_sort": "2026-05-01", "location": "Como, Italy", "note": "Late deadline Feb 28; last entry Mar 30; results announced May 1." },
+    { "id": "dandad-awards-2026", "cat": "intl-award", "name": "D&AD Awards & Festival", "date": "May 19–20", "date_sort": "2026-05-19", "location": "Southbank, London, UK", "note": "Judging May 17–20; winners announced May 20. Shortlist announced May 19–20." },
+    { "id": "dezeen-awards-2026", "cat": "intl-award", "name": "Dezeen Awards", "date": "Entry deadline Jun 3; winners Nov", "date_sort": "2026-06-03", "location": "London, UK", "note": "Eligible projects completed Jun 1, 2024 – May 31, 2026. Regional showcases Sep; winners mid-Nov." },
+    { "id": "european-design-awards-2026", "cat": "intl-award", "name": "European Design Awards", "date": "Ceremony Jun 13", "date_sort": "2026-06-13", "location": "Sofia, Bulgaria", "note": "Deadline Feb 13. Celebrates the best of European graphic, digital, and spatial design." },
+    { "id": "red-dot-award-2026", "cat": "intl-award", "name": "Red Dot Award Ceremony — Product Design", "date": "Jul 7", "date_sort": "2026-07-07", "location": "Essen, Germany", "note": "Product Design ceremony Jul 7 in Essen. Brands & Communication Design ceremony Nov 6 in Berlin. Design Concept ceremony TBD in Singapore." },
+    { "id": "good-design-award-2026", "cat": "intl-award", "name": "Good Design Award (Japan)", "date": "Results Oct", "date_sort": "2026-10-01", "location": "Tokyo, Japan", "note": "Organized by Japan Institute of Design Promotion. Results and exhibition in autumn." },
+
+    { "id": "premio-design-mcb-2026", "cat": "brazil-award", "name": "Prêmio Design MCB (36ª edição)", "date": "Exposição: Abr 25 – Jul 19", "date_sort": "2026-04-25", "location": "Museu da Casa Brasileira, São Paulo, Brasil", "note": "Inscrições encerradas Jan 28. Resultado final Abr 25. Exposição de Abr 25 a Jul 19. Participação gratuita, aberto a brasileiros e estrangeiros residentes no Brasil há 2+ anos." },
+    { "id": "bda-2026", "cat": "brazil-award", "name": "BDA – Prêmio Brasileiro de Design", "date": "Datas 2026 a confirmar", "date_sort": "2026-12-01", "location": "São Paulo, Brasil", "note": "Organizado pela ABEDESIGN. 15ª edição em 2025 (tema: 'Colaborar e Transformar'), cerimônia realizada em 15 de dezembro de 2025 na Sala São Paulo. 14 categorias incluindo Branding, Design de Produto, Design Digital e Design de Impacto Social. Parceria com iF Design Award para visibilidade internacional. Datas de 2026 ainda não anunciadas." },
+
+    { "id": "maison-objet-jan-2026", "cat": "industry", "name": "Maison et Objet Paris (January)", "date": "Jan 15–19", "date_sort": "2026-01-15", "location": "Paris Nord Villepinte, France", "note": "Leading trade fair for decoration, design, and lifestyle — January edition." },
+    { "id": "imm-cologne-2026", "cat": "industry", "name": "IMM Cologne", "date": "Jan 20–23", "date_sort": "2026-01-20", "location": "Cologne, Germany", "note": "International furniture fair showcasing interior décor products and latest furniture trends." },
+    { "id": "ambiente-2026", "cat": "industry", "name": "Ambiente Frankfurt", "date": "Feb 6–10", "date_sort": "2026-02-06", "location": "Messe Frankfurt, Germany", "note": "World's most important consumer goods fair — 4,600+ exhibitors, 148,000+ participants. Concurrent with Creativeworld and Christmasworld." },
+    { "id": "design-shanghai-2026", "cat": "industry", "name": "Design Shanghai (13th)", "date": "Mar 19–22", "date_sort": "2026-03-19", "location": "Shanghai Exhibition Centre, China", "note": "Asia's leading design showcase. Next edition: Mar 4–7, 2027." },
+    { "id": "icff-2026", "cat": "industry", "name": "ICFF – International Contemporary Furniture Fair", "date": "May 17–19", "date_sort": "2026-05-17", "location": "Javits Center, New York, USA", "note": "North America's leading contemporary design fair — 400+ design brands. Theme: 'Common Ground: A Global Dialogue on Design and Shared Values.' Part of NYCxDesign." },
+    { "id": "design-tokyo-2026", "cat": "industry", "name": "Design Tokyo", "date": "Jun 24–26", "date_sort": "2026-06-24", "location": "Tokyo Big Sight, Japan", "note": "International trade show for design products and innovations." },
+    { "id": "maison-objet-sep-2026", "cat": "industry", "name": "Maison et Objet Paris (September)", "date": "Sep 10–14", "date_sort": "2026-09-10", "location": "Paris Nord Villepinte, France", "note": "Leading trade fair for decoration, design, and lifestyle — September edition. Runs alongside Paris Design Week." },
+    { "id": "adobe-max-2026", "cat": "industry", "name": "Adobe MAX", "date": "Nov 10–12", "date_sort": "2026-11-10", "location": "Miami Beach Convention Center, Miami, USA", "note": "Adobe's annual creativity conference. Preconference Nov 8–9; online component Nov 10–11. 12,000+ in-person attendees expected." }
+  ]
 }
