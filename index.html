@@ -184,6 +184,13 @@ main { padding: 1.5rem 2rem; max-width: 1500px; margin: 0 auto; }
 .legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text2); }
 .legend-dot { width: 8px; height: 8px; border-radius: 50%; }
 
+/* ── VENUE GRID (Museums & Galleries) ────────────────────────────────── */
+.venue-country {
+  font-size: 11px; font-weight: 500; color: var(--text2);
+  margin: 10px 0 6px; padding-left: 2px; letter-spacing: 0.03em;
+}
+.venue-country:first-child { margin-top: 0; }
+
 /* ── EMPTY STATE FOR UPCOMING CATEGORIES ──────────────────────────────── */
 .coming-soon {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -313,6 +320,7 @@ function activateSection(id) {
   state.activeSection = id;
   state.activeSub = 'all';
   document.querySelectorAll('.cat-tab').forEach(t => t.classList.toggle('active', t.dataset.id === id));
+  document.querySelector('.view-toggle').style.display = '';
   buildFilterBar();
   render();
 }
@@ -350,6 +358,8 @@ function buildFilterBar() {
 function setSub(id) {
   state.activeSub = id;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.sub === id));
+  const isVenueMode = (state.activeSection === 'art' && id === 'museums');
+  document.querySelector('.view-toggle').style.display = isVenueMode ? 'none' : '';
   render();
 }
 
@@ -371,6 +381,10 @@ function render() {
   if (state.view === 'master') { renderMaster(); return; }
   const data = state.data[state.activeSection];
   if (!data) return;
+  if (state.activeSection === 'art' && state.activeSub === 'museums' && data.venues) {
+    renderVenueGrid(data);
+    return;
+  }
   if (state.view === 'calendar') { renderCalendar(data); return; }
   renderGrid(data);
 }
@@ -429,6 +443,68 @@ function renderGrid(data) {
 
   main.innerHTML = html;
   updateMeta(events.length);
+}
+
+// ── VENUE GRID (Museums & Galleries) ──────────────────────────────────
+function renderVenueGrid(data) {
+  const REGION_ORDER = ['North America','South America','Europe','Middle East','Asia','Oceania','Africa'];
+  const q = state.query;
+  const venues = (data.venues || []).filter(v => {
+    if (!q) return true;
+    return [v.name, v.city, v.country, v.note].filter(Boolean).some(s => s.toLowerCase().includes(q));
+  });
+
+  const main = document.getElementById('main');
+  if (!venues.length) {
+    main.innerHTML = '<div class="empty">No venues match your search.</div>';
+    updateMeta(0, 'venue');
+    return;
+  }
+
+  // Group by region then country
+  const byRegion = {};
+  venues.forEach(v => {
+    if (!byRegion[v.region]) byRegion[v.region] = {};
+    if (!byRegion[v.region][v.country]) byRegion[v.region][v.country] = [];
+    byRegion[v.region][v.country].push(v);
+  });
+
+  const museumsCat = (data.categories || []).find(c => c.id === 'museums') || { color: '#5098d8', label: 'Museums & Galleries' };
+
+  let html = '';
+  REGION_ORDER.forEach(region => {
+    const countries = byRegion[region];
+    if (!countries) return;
+    const regionCount = Object.values(countries).reduce((s, arr) => s + arr.length, 0);
+    html += `<div class="section">
+      <div class="section-title">
+        <span class="legend-dot" style="background:${museumsCat.color};width:8px;height:8px;border-radius:50%;display:inline-block;"></span>
+        ${region}
+        <span class="section-count">${regionCount}</span>
+      </div>`;
+
+    Object.keys(countries).sort().forEach(country => {
+      html += `<div class="venue-country">${country}</div><div class="grid">`;
+      countries[country].forEach(v => {
+        const typeLabel = v.type === 'gallery' ? 'Gallery' : 'Museum';
+        const badgeBg = v.type === 'gallery' ? '#e0a84022' : museumsCat.color + '22';
+        const badgeColor = v.type === 'gallery' ? '#e0a840' : museumsCat.color;
+        html += `<div class="card">
+          <div class="card-top">
+            <span class="card-name">${v.name}</span>
+            <span class="badge" style="background:${badgeBg};color:${badgeColor}">${typeLabel}</span>
+          </div>
+          <div class="card-location">${v.city}, ${v.country}</div>
+          ${v.note ? `<div class="card-note">${v.note}</div>` : ''}
+        </div>`;
+      });
+      html += '</div>';
+    });
+    html += '</div>';
+  });
+
+  main.innerHTML = html;
+  updateMeta(venues.length, 'venue');
 }
 
 // ── CALENDAR VIEW (single category) ───────────────────────────────────────
@@ -562,10 +638,11 @@ function filterEvents(events) {
   });
 }
 
-function updateMeta(count) {
+function updateMeta(count, unit) {
   const section = CATEGORY_DEFS.find(d => d.id === state.activeSection);
+  const u = unit || 'event';
   document.getElementById('header-meta').textContent =
-    `${section?.label || ''} · ${count} event${count!==1?'s':''}`;
+    `${section?.label || ''} · ${count} ${u}${count!==1?'s':''}`;
 }
 </script>
 </div><!-- end app-root -->

@@ -6,11 +6,826 @@
     "last_updated": "2026-03-27"
   },
   "categories": [
-    { "id": "art-fair",      "label": "Art Fairs",          "color": "#e07070" },
-    { "id": "biennale",      "label": "Biennials & Triennials", "color": "#e0a840" },
-    { "id": "art-award",     "label": "Awards & Prizes",    "color": "#9080d8" },
-    { "id": "art-industry",  "label": "Industry Events",    "color": "#909088" },
-    { "id": "brazil-art",    "label": "Brazil Art Events",  "color": "#4dcca0" }
+    { "id": "intl-fair",       "label": "International Art Fairs",   "color": "#e07070" },
+    { "id": "brazil-fair",     "label": "Brazilian Art Fairs",       "color": "#4dcca0" },
+    { "id": "intl-biennial",   "label": "International Biennials",   "color": "#e0a840" },
+    { "id": "brazil-biennial", "label": "Brazilian Biennials",       "color": "#50c890" },
+    { "id": "art-award",       "label": "Awards & Prizes",           "color": "#9080d8" },
+    { "id": "intl-industry",   "label": "Industry Events",           "color": "#909088" },
+    { "id": "brazil-industry", "label": "Brazil Industry Events",    "color": "#70a0a0" },
+    { "id": "major-show",      "label": "Major Shows 2026 (BR & US)","color": "#e07850" },
+    { "id": "museums",         "label": "Museums & Galleries",       "color": "#5098d8" }
   ],
-  "events": []
+  "events": [
+    {
+      "id": "art-sg-2026",
+      "cat": "intl-fair",
+      "name": "Art SG",
+      "date": "Jan 16 – 19, 2026",
+      "date_sort": "2026-01-16",
+      "location": "Singapore",
+      "note": "Southeast Asia's leading art fair at Marina Bay Sands"
+    },
+    {
+      "id": "india-art-fair-2026",
+      "cat": "intl-fair",
+      "name": "India Art Fair",
+      "date": "Feb 5 – 8, 2026",
+      "date_sort": "2026-02-05",
+      "location": "New Delhi, India",
+      "note": "South Asia's leading platform for modern and contemporary art"
+    },
+    {
+      "id": "arco-madrid-2026",
+      "cat": "intl-fair",
+      "name": "ARCOmadrid",
+      "date": "Feb 25 – Mar 1, 2026",
+      "date_sort": "2026-02-25",
+      "location": "Madrid, Spain",
+      "note": "Spain's international contemporary art fair, 45th edition"
+    },
+    {
+      "id": "frieze-los-angeles-2026",
+      "cat": "intl-fair",
+      "name": "Frieze Los Angeles",
+      "date": "Feb 19 – 22, 2026",
+      "date_sort": "2026-02-19",
+      "location": "Los Angeles, USA",
+      "note": "Frieze's West Coast edition at Santa Monica Airport"
+    },
+    {
+      "id": "tefaf-maastricht-2026",
+      "cat": "intl-fair",
+      "name": "TEFAF Maastricht",
+      "date": "Mar 12 – 22, 2026",
+      "date_sort": "2026-03-12",
+      "location": "Maastricht, Netherlands",
+      "note": "The world's premier art and antiques fair"
+    },
+    {
+      "id": "art-dubai-2026",
+      "cat": "intl-fair",
+      "name": "Art Dubai",
+      "date": "Mar 18 – 22, 2026",
+      "date_sort": "2026-03-18",
+      "location": "Dubai, UAE",
+      "note": "Leading international art fair in the Middle East"
+    },
+    {
+      "id": "art-basel-hong-kong-2026",
+      "cat": "intl-fair",
+      "name": "Art Basel Hong Kong",
+      "date": "Mar 27 – 29, 2026",
+      "date_sort": "2026-03-27",
+      "location": "Hong Kong",
+      "note": "Art Basel's Asian edition at the Hong Kong Convention Centre"
+    },
+    {
+      "id": "miart-2026",
+      "cat": "intl-fair",
+      "name": "miart",
+      "date": "Apr 3 – 5, 2026",
+      "date_sort": "2026-04-03",
+      "location": "Milan, Italy",
+      "note": "Milan's international modern and contemporary art fair"
+    },
+    {
+      "id": "expo-chicago-2026",
+      "cat": "intl-fair",
+      "name": "Expo Chicago",
+      "date": "Apr 23 – 26, 2026",
+      "date_sort": "2026-04-23",
+      "location": "Chicago, USA",
+      "note": "International exposition of contemporary and modern art at Navy Pier"
+    },
+    {
+      "id": "tefaf-new-york-2026",
+      "cat": "intl-fair",
+      "name": "TEFAF New York",
+      "date": "May 8 – 12, 2026",
+      "date_sort": "2026-05-08",
+      "location": "New York, USA",
+      "note": "TEFAF's New York edition at the Park Avenue Armory"
+    },
+    {
+      "id": "frieze-new-york-2026",
+      "cat": "intl-fair",
+      "name": "Frieze New York",
+      "date": "May 14 – 18, 2026",
+      "date_sort": "2026-05-14",
+      "location": "New York, USA",
+      "note": "Frieze's flagship US fair at The Shed"
+    },
+    {
+      "id": "art-basel-2026",
+      "cat": "intl-fair",
+      "name": "Art Basel",
+      "date": "Jun 18 – 22, 2026",
+      "date_sort": "2026-06-18",
+      "location": "Basel, Switzerland",
+      "note": "The world's premier modern and contemporary art fair"
+    },
+    {
+      "id": "frieze-seoul-2026",
+      "cat": "intl-fair",
+      "name": "Frieze Seoul",
+      "date": "Sep 3 – 6, 2026",
+      "date_sort": "2026-09-03",
+      "location": "Seoul, South Korea",
+      "note": "Frieze's Asian edition at COEX"
+    },
+    {
+      "id": "armory-show-2026",
+      "cat": "intl-fair",
+      "name": "The Armory Show",
+      "date": "Sep 10 – 14, 2026",
+      "date_sort": "2026-09-10",
+      "location": "New York, USA",
+      "note": "New York's premier art fair at the Javits Center"
+    },
+    {
+      "id": "1-54-london-2026",
+      "cat": "intl-fair",
+      "name": "1-54 Contemporary African Art Fair",
+      "date": "Oct 8 – 11, 2026",
+      "date_sort": "2026-10-08",
+      "location": "London, UK",
+      "note": "Leading fair dedicated to contemporary art from Africa and its diaspora"
+    },
+    {
+      "id": "frieze-london-2026",
+      "cat": "intl-fair",
+      "name": "Frieze London",
+      "date": "Oct 14 – 18, 2026",
+      "date_sort": "2026-10-14",
+      "location": "London, UK",
+      "note": "Frieze's flagship fair at The Regent's Park"
+    },
+    {
+      "id": "art-basel-paris-2026",
+      "cat": "intl-fair",
+      "name": "Art Basel Paris",
+      "date": "Oct 22 – 26, 2026",
+      "date_sort": "2026-10-22",
+      "location": "Paris, France",
+      "note": "Art Basel's Paris edition at the Grand Palais (formerly Paris+)"
+    },
+    {
+      "id": "artissima-2026",
+      "cat": "intl-fair",
+      "name": "Artissima",
+      "date": "Nov 6 – 8, 2026",
+      "date_sort": "2026-11-06",
+      "location": "Turin, Italy",
+      "note": "Italy's most important contemporary art fair"
+    },
+    {
+      "id": "art-basel-miami-2026",
+      "cat": "intl-fair",
+      "name": "Art Basel Miami Beach",
+      "date": "Dec 3 – 7, 2026",
+      "date_sort": "2026-12-03",
+      "location": "Miami Beach, USA",
+      "note": "Art Basel's Americas edition during Miami Art Week"
+    },
+
+    {
+      "id": "sp-arte-2026",
+      "cat": "brazil-fair",
+      "name": "SP-Arte",
+      "date": "Apr 1 – 5, 2026",
+      "date_sort": "2026-04-01",
+      "location": "São Paulo, Brazil",
+      "note": "Brazil's most important art fair, held at the Bienal Pavilion in Ibirapuera Park"
+    },
+    {
+      "id": "sp-arte-rotas-2026",
+      "cat": "brazil-fair",
+      "name": "SP-Arte Rotas Brasileiras",
+      "date": "Aug 20 – 23, 2026",
+      "date_sort": "2026-08-20",
+      "location": "São Paulo, Brazil",
+      "note": "SP-Arte's edition focused on Brazilian art from all regions"
+    },
+    {
+      "id": "artrio-2026",
+      "cat": "brazil-fair",
+      "name": "ArtRio",
+      "date": "Sep 23 – 27, 2026",
+      "date_sort": "2026-09-23",
+      "location": "Rio de Janeiro, Brazil",
+      "note": "Rio's leading international art fair"
+    },
+    {
+      "id": "parte-2026",
+      "cat": "brazil-fair",
+      "name": "Parte",
+      "date": "Nov 5 – 8, 2026",
+      "date_sort": "2026-11-05",
+      "location": "São Paulo, Brazil",
+      "note": "Art fair focused on emerging and mid-career artists"
+    },
+    {
+      "id": "feira-anita-2026",
+      "cat": "brazil-fair",
+      "name": "Feira Anita",
+      "date": "Oct 2026",
+      "date_sort": "2026-10-15",
+      "location": "São Paulo, Brazil",
+      "note": "Independent art fair celebrating women artists"
+    },
+
+    {
+      "id": "venice-architecture-biennale-2026",
+      "cat": "intl-biennial",
+      "name": "Venice Architecture Biennale",
+      "date": "May 23 – Nov 22, 2026",
+      "date_sort": "2026-05-23",
+      "location": "Venice, Italy",
+      "note": "20th International Architecture Exhibition — La Biennale di Venezia"
+    },
+    {
+      "id": "whitney-biennial-2026",
+      "cat": "intl-biennial",
+      "name": "Whitney Biennial",
+      "date": "Mar 2026 – Aug 2026",
+      "date_sort": "2026-03-15",
+      "location": "New York, USA",
+      "note": "The longest-running survey of American art, 81st edition at the Whitney Museum"
+    },
+    {
+      "id": "sharjah-biennial-2026",
+      "cat": "intl-biennial",
+      "name": "Sharjah Biennial 16",
+      "date": "Feb 6 – Jun 15, 2026",
+      "date_sort": "2026-02-06",
+      "location": "Sharjah, UAE",
+      "note": "Major biennial bridging contemporary art from the Global South"
+    },
+    {
+      "id": "manifesta-16-2026",
+      "cat": "intl-biennial",
+      "name": "Manifesta 16",
+      "date": "Jun – Oct 2026",
+      "date_sort": "2026-06-15",
+      "location": "Ruhr, Germany",
+      "note": "European nomadic biennial, 16th edition in the Ruhr metropolitan area"
+    },
+    {
+      "id": "gwangju-biennale-2026",
+      "cat": "intl-biennial",
+      "name": "Gwangju Biennale",
+      "date": "Sep 5 – Nov 30, 2026",
+      "date_sort": "2026-09-05",
+      "location": "Gwangju, South Korea",
+      "note": "Asia's oldest and most prestigious biennale of contemporary art"
+    },
+    {
+      "id": "lyon-biennale-2026",
+      "cat": "intl-biennial",
+      "name": "Biennale de Lyon",
+      "date": "Sep 18 – Dec 31, 2026",
+      "date_sort": "2026-09-18",
+      "location": "Lyon, France",
+      "note": "One of Europe's leading contemporary art biennials"
+    },
+    {
+      "id": "liverpool-biennial-2026",
+      "cat": "intl-biennial",
+      "name": "Liverpool Biennial",
+      "date": "Jun 12 – Sep 27, 2026",
+      "date_sort": "2026-06-12",
+      "location": "Liverpool, UK",
+      "note": "The UK's largest festival of contemporary visual art"
+    },
+    {
+      "id": "berlin-biennale-2026",
+      "cat": "intl-biennial",
+      "name": "Berlin Biennale 14",
+      "date": "Jun – Sep 2026",
+      "date_sort": "2026-06-01",
+      "location": "Berlin, Germany",
+      "note": "Major biennial of contemporary art across Berlin venues"
+    },
+
+    {
+      "id": "bienal-sp-2026",
+      "cat": "brazil-biennial",
+      "name": "36ª Bienal de São Paulo",
+      "date": "Sep 5 – Dec 6, 2026",
+      "date_sort": "2026-09-05",
+      "location": "São Paulo, Brazil",
+      "note": "The 36th edition of the São Paulo Biennial at the Ciccillo Matarazzo Pavilion, Ibirapuera Park"
+    },
+    {
+      "id": "bienal-mercosul-2026",
+      "cat": "brazil-biennial",
+      "name": "14ª Bienal do Mercosul",
+      "date": "Oct – Dec 2026",
+      "date_sort": "2026-10-01",
+      "location": "Porto Alegre, Brazil",
+      "note": "Biennial bringing together artists from Latin America and beyond"
+    },
+    {
+      "id": "frestas-trienal-2026",
+      "cat": "brazil-biennial",
+      "name": "Frestas – Trienal de Artes",
+      "date": "Oct 2026 – Feb 2027",
+      "date_sort": "2026-10-10",
+      "location": "Sorocaba, Brazil",
+      "note": "Triennial held at SESC Sorocaba exploring contemporary art and social issues"
+    },
+
+    {
+      "id": "turner-prize-2026",
+      "cat": "art-award",
+      "name": "Turner Prize 2026",
+      "date": "Shortlist: May · Ceremony: Dec 2, 2026",
+      "date_sort": "2026-12-02",
+      "location": "London, UK",
+      "note": "The UK's most prestigious contemporary art prize, awarded by Tate"
+    },
+    {
+      "id": "marcel-duchamp-prize-2026",
+      "cat": "art-award",
+      "name": "Prix Marcel Duchamp",
+      "date": "Oct 2026",
+      "date_sort": "2026-10-20",
+      "location": "Paris, France",
+      "note": "France's most important contemporary art award, presented during Art Basel Paris"
+    },
+    {
+      "id": "hugo-boss-prize-2026",
+      "cat": "art-award",
+      "name": "Hugo Boss Prize",
+      "date": "Oct 2026",
+      "date_sort": "2026-10-15",
+      "location": "New York, USA",
+      "note": "Biennial award for significant achievement in contemporary art, organized by the Guggenheim"
+    },
+    {
+      "id": "hasselblad-award-2026",
+      "cat": "art-award",
+      "name": "Hasselblad Award",
+      "date": "Mar 2026",
+      "date_sort": "2026-03-15",
+      "location": "Gothenburg, Sweden",
+      "note": "The world's most prestigious photography award"
+    },
+    {
+      "id": "praemium-imperiale-2026",
+      "cat": "art-award",
+      "name": "Praemium Imperiale",
+      "date": "Oct 2026",
+      "date_sort": "2026-10-22",
+      "location": "Tokyo, Japan",
+      "note": "Awarded by the Japan Art Association for lifetime achievement in arts"
+    },
+    {
+      "id": "prix-pictet-2026",
+      "cat": "art-award",
+      "name": "Prix Pictet",
+      "date": "Nov 2026",
+      "date_sort": "2026-11-10",
+      "location": "Geneva, Switzerland",
+      "note": "Global award for photography and sustainability"
+    },
+    {
+      "id": "artes-mundi-2026",
+      "cat": "art-award",
+      "name": "Artes Mundi 11",
+      "date": "Oct 2026",
+      "date_sort": "2026-10-01",
+      "location": "Cardiff, Wales",
+      "note": "Biennial prize celebrating international contemporary art"
+    },
+    {
+      "id": "pipa-prize-2026",
+      "cat": "art-award",
+      "name": "Prêmio PIPA",
+      "date": "Nov 2026",
+      "date_sort": "2026-11-15",
+      "location": "Rio de Janeiro, Brazil",
+      "note": "Brazil's most important contemporary art prize, includes online voting"
+    },
+    {
+      "id": "sobey-art-award-2026",
+      "cat": "art-award",
+      "name": "Sobey Art Award",
+      "date": "Nov 2026",
+      "date_sort": "2026-11-20",
+      "location": "Canada",
+      "note": "One of the largest annual art prizes in North America"
+    },
+    {
+      "id": "future-generation-art-prize-2026",
+      "cat": "art-award",
+      "name": "Future Generation Art Prize",
+      "date": "Dec 2026",
+      "date_sort": "2026-12-05",
+      "location": "Kyiv, Ukraine / Venice, Italy",
+      "note": "Biennial prize for artists under 35, organized by the PinchukArtCentre"
+    },
+
+    {
+      "id": "talking-galleries-2026",
+      "cat": "intl-industry",
+      "name": "Talking Galleries Barcelona",
+      "date": "Jan 26 – 27, 2026",
+      "date_sort": "2026-01-26",
+      "location": "Barcelona, Spain",
+      "note": "Annual think tank for the gallery sector"
+    },
+    {
+      "id": "ubs-art-market-report-2026",
+      "cat": "intl-industry",
+      "name": "Art Basel & UBS Art Market Report",
+      "date": "Mar 2026",
+      "date_sort": "2026-03-20",
+      "location": "Global",
+      "note": "Annual report on the global art market released ahead of Art Basel Hong Kong"
+    },
+    {
+      "id": "gallery-weekend-berlin-2026",
+      "cat": "intl-industry",
+      "name": "Gallery Weekend Berlin",
+      "date": "Apr 24 – 26, 2026",
+      "date_sort": "2026-04-24",
+      "location": "Berlin, Germany",
+      "note": "Annual event opening new exhibitions across 50+ Berlin galleries"
+    },
+    {
+      "id": "ny-art-week-2026",
+      "cat": "intl-industry",
+      "name": "New York Art Week",
+      "date": "Sep 10 – 14, 2026",
+      "date_sort": "2026-09-10",
+      "location": "New York, USA",
+      "note": "Major art week coinciding with The Armory Show, gallery openings across Chelsea and beyond"
+    },
+    {
+      "id": "art-week-tokyo-2026",
+      "cat": "intl-industry",
+      "name": "Art Week Tokyo",
+      "date": "Nov 5 – 8, 2026",
+      "date_sort": "2026-11-05",
+      "location": "Tokyo, Japan",
+      "note": "Annual event connecting museums, galleries, and art spaces across Tokyo"
+    },
+    {
+      "id": "miami-art-week-2026",
+      "cat": "intl-industry",
+      "name": "Miami Art Week",
+      "date": "Dec 1 – 7, 2026",
+      "date_sort": "2026-12-01",
+      "location": "Miami, USA",
+      "note": "City-wide art week surrounding Art Basel Miami Beach with satellite fairs and events"
+    },
+
+    {
+      "id": "gallery-night-sp-mar-2026",
+      "cat": "brazil-industry",
+      "name": "Gallery Night São Paulo – 1st Edition",
+      "date": "Mar 28, 2026",
+      "date_sort": "2026-03-28",
+      "location": "São Paulo, Brazil",
+      "note": "Collective gallery opening night across São Paulo's art district"
+    },
+    {
+      "id": "gallery-night-sp-jun-2026",
+      "cat": "brazil-industry",
+      "name": "Gallery Night São Paulo – 2nd Edition",
+      "date": "Jun 27, 2026",
+      "date_sort": "2026-06-27",
+      "location": "São Paulo, Brazil",
+      "note": "Collective gallery opening night across São Paulo's art district"
+    },
+    {
+      "id": "gallery-night-sp-sep-2026",
+      "cat": "brazil-industry",
+      "name": "Gallery Night São Paulo – 3rd Edition",
+      "date": "Sep 26, 2026",
+      "date_sort": "2026-09-26",
+      "location": "São Paulo, Brazil",
+      "note": "Collective gallery opening night across São Paulo's art district"
+    },
+    {
+      "id": "gallery-night-sp-nov-2026",
+      "cat": "brazil-industry",
+      "name": "Gallery Night São Paulo – 4th Edition",
+      "date": "Nov 28, 2026",
+      "date_sort": "2026-11-28",
+      "location": "São Paulo, Brazil",
+      "note": "Collective gallery opening night across São Paulo's art district"
+    },
+    {
+      "id": "semana-arte-sp-2026",
+      "cat": "brazil-industry",
+      "name": "Semana de Arte de São Paulo",
+      "date": "Aug 2026",
+      "date_sort": "2026-08-15",
+      "location": "São Paulo, Brazil",
+      "note": "Week-long program of exhibitions, talks, and studio visits across the city"
+    },
+
+    {
+      "id": "met-costume-gala-2026",
+      "cat": "major-show",
+      "name": "Met Gala & Costume Institute Exhibition",
+      "date": "May 4, 2026 (Gala) · Exhibition May – Sep",
+      "date_sort": "2026-05-04",
+      "location": "New York, USA",
+      "note": "The Metropolitan Museum's annual fashion-meets-art exhibition and gala"
+    },
+    {
+      "id": "moma-major-exhibition-2026",
+      "cat": "major-show",
+      "name": "MoMA — Major Spring Exhibition",
+      "date": "Mar – Jul 2026",
+      "date_sort": "2026-03-01",
+      "location": "New York, USA",
+      "note": "Museum of Modern Art's headline exhibition for spring/summer 2026"
+    },
+    {
+      "id": "whitney-biennial-show",
+      "cat": "major-show",
+      "name": "Whitney Biennial 2026 Exhibition",
+      "date": "Mar – Aug 2026",
+      "date_sort": "2026-03-15",
+      "location": "New York, USA",
+      "note": "Exhibition accompanying the 81st Whitney Biennial survey of American art"
+    },
+    {
+      "id": "guggenheim-2026",
+      "cat": "major-show",
+      "name": "Guggenheim — Major Retrospective",
+      "date": "May – Sep 2026",
+      "date_sort": "2026-05-01",
+      "location": "New York, USA",
+      "note": "Solomon R. Guggenheim Museum's headlining exhibition"
+    },
+    {
+      "id": "lacma-2026",
+      "cat": "major-show",
+      "name": "LACMA — New Building Inaugural Exhibitions",
+      "date": "2026",
+      "date_sort": "2026-06-01",
+      "location": "Los Angeles, USA",
+      "note": "Exhibitions marking LACMA's David Geffen Galleries opening phase"
+    },
+    {
+      "id": "sfmoma-2026",
+      "cat": "major-show",
+      "name": "SFMOMA — Major Photography Exhibition",
+      "date": "Jun – Oct 2026",
+      "date_sort": "2026-06-15",
+      "location": "San Francisco, USA",
+      "note": "San Francisco Museum of Modern Art's flagship photography show"
+    },
+    {
+      "id": "mca-chicago-2026",
+      "cat": "major-show",
+      "name": "MCA Chicago — Contemporary Survey",
+      "date": "Apr – Aug 2026",
+      "date_sort": "2026-04-01",
+      "location": "Chicago, USA",
+      "note": "Museum of Contemporary Art Chicago's major 2026 exhibition"
+    },
+    {
+      "id": "broad-2026",
+      "cat": "major-show",
+      "name": "The Broad — Special Exhibition",
+      "date": "Feb – Jun 2026",
+      "date_sort": "2026-02-01",
+      "location": "Los Angeles, USA",
+      "note": "The Broad museum's featured exhibition from its contemporary collection"
+    },
+    {
+      "id": "masp-2026-spring",
+      "cat": "major-show",
+      "name": "MASP — Histórias da Arte",
+      "date": "Mar – Jul 2026",
+      "date_sort": "2026-03-01",
+      "location": "São Paulo, Brazil",
+      "note": "MASP's signature thematic exhibition series continuing in 2026"
+    },
+    {
+      "id": "masp-2026-fall",
+      "cat": "major-show",
+      "name": "MASP — Major Retrospective",
+      "date": "Aug – Nov 2026",
+      "date_sort": "2026-08-01",
+      "location": "São Paulo, Brazil",
+      "note": "MASP's second-half headlining retrospective exhibition"
+    },
+    {
+      "id": "pinacoteca-2026",
+      "cat": "major-show",
+      "name": "Pinacoteca — Contemporary Brazilian Art",
+      "date": "Apr – Sep 2026",
+      "date_sort": "2026-04-01",
+      "location": "São Paulo, Brazil",
+      "note": "Pinacoteca de São Paulo's major exhibition at the Pina Contemporânea"
+    },
+    {
+      "id": "inhotim-2026",
+      "cat": "major-show",
+      "name": "Inhotim — New Pavilion Openings",
+      "date": "2026",
+      "date_sort": "2026-01-01",
+      "location": "Brumadinho, Brazil",
+      "note": "New installations and pavilion openings at the world's largest open-air contemporary art museum"
+    },
+    {
+      "id": "ccbb-sp-2026",
+      "cat": "major-show",
+      "name": "CCBB São Paulo — Blockbuster Exhibition",
+      "date": "May – Aug 2026",
+      "date_sort": "2026-05-01",
+      "location": "São Paulo, Brazil",
+      "note": "Centro Cultural Banco do Brasil's major exhibition in São Paulo"
+    },
+    {
+      "id": "ccbb-rio-2026",
+      "cat": "major-show",
+      "name": "CCBB Rio — Major Exhibition",
+      "date": "Jun – Sep 2026",
+      "date_sort": "2026-06-01",
+      "location": "Rio de Janeiro, Brazil",
+      "note": "Centro Cultural Banco do Brasil Rio's headlining show"
+    },
+    {
+      "id": "mar-2026",
+      "cat": "major-show",
+      "name": "MAR — Museu de Arte do Rio Exhibition",
+      "date": "Apr – Oct 2026",
+      "date_sort": "2026-04-01",
+      "location": "Rio de Janeiro, Brazil",
+      "note": "Major thematic exhibition at the Museu de Arte do Rio"
+    },
+    {
+      "id": "tomie-ohtake-2026",
+      "cat": "major-show",
+      "name": "Instituto Tomie Ohtake — International Exhibition",
+      "date": "Jul – Oct 2026",
+      "date_sort": "2026-07-01",
+      "location": "São Paulo, Brazil",
+      "note": "Major international contemporary art exhibition"
+    }
+  ],
+  "venues": [
+    { "id": "moma", "name": "Museum of Modern Art (MoMA)", "city": "New York", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "met", "name": "The Metropolitan Museum of Art", "city": "New York", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "met-breuer", "name": "The Met Cloisters", "city": "New York", "country": "United States", "region": "North America", "type": "museum", "note": "Medieval art and architecture" },
+    { "id": "guggenheim-ny", "name": "Solomon R. Guggenheim Museum", "city": "New York", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "whitney", "name": "Whitney Museum of American Art", "city": "New York", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "new-museum", "name": "New Museum", "city": "New York", "country": "United States", "region": "North America", "type": "museum", "note": "Contemporary art" },
+    { "id": "brooklyn-museum", "name": "Brooklyn Museum", "city": "New York", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "dia-beacon", "name": "Dia Beacon", "city": "Beacon, NY", "country": "United States", "region": "North America", "type": "museum", "note": "Large-scale art from the 1960s to present" },
+    { "id": "dia-chelsea", "name": "Dia Chelsea", "city": "New York", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "moma-ps1", "name": "MoMA PS1", "city": "New York", "country": "United States", "region": "North America", "type": "museum", "note": "Contemporary art affiliate of MoMA" },
+    { "id": "ica-boston", "name": "Institute of Contemporary Art (ICA)", "city": "Boston", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "art-institute-chicago", "name": "Art Institute of Chicago", "city": "Chicago", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "mca-chicago", "name": "Museum of Contemporary Art Chicago", "city": "Chicago", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "national-gallery-dc", "name": "National Gallery of Art", "city": "Washington, D.C.", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "hirshhorn", "name": "Hirshhorn Museum and Sculpture Garden", "city": "Washington, D.C.", "country": "United States", "region": "North America", "type": "museum", "note": "Modern and contemporary art" },
+    { "id": "lacma", "name": "Los Angeles County Museum of Art (LACMA)", "city": "Los Angeles", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "the-broad", "name": "The Broad", "city": "Los Angeles", "country": "United States", "region": "North America", "type": "museum", "note": "Contemporary art" },
+    { "id": "moca-la", "name": "Museum of Contemporary Art (MOCA)", "city": "Los Angeles", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "hammer", "name": "Hammer Museum", "city": "Los Angeles", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "sfmoma", "name": "San Francisco Museum of Modern Art (SFMOMA)", "city": "San Francisco", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "walker", "name": "Walker Art Center", "city": "Minneapolis", "country": "United States", "region": "North America", "type": "museum", "note": "Contemporary art" },
+    { "id": "mfah", "name": "Museum of Fine Arts, Houston", "city": "Houston", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "dallas-museum", "name": "Dallas Museum of Art", "city": "Dallas", "country": "United States", "region": "North America", "type": "museum", "note": "" },
+    { "id": "mass-moca", "name": "MASS MoCA", "city": "North Adams, MA", "country": "United States", "region": "North America", "type": "museum", "note": "Large-scale installations in former factory" },
+    { "id": "gagosian-ny", "name": "Gagosian", "city": "New York", "country": "United States", "region": "North America", "type": "gallery", "note": "Global mega-gallery with multiple NYC locations" },
+    { "id": "pace-ny", "name": "Pace Gallery", "city": "New York", "country": "United States", "region": "North America", "type": "gallery", "note": "Major gallery at 540 West 25th Street" },
+    { "id": "zwirner-ny", "name": "David Zwirner", "city": "New York", "country": "United States", "region": "North America", "type": "gallery", "note": "Leading contemporary art gallery" },
+    { "id": "hauser-wirth-ny", "name": "Hauser & Wirth", "city": "New York", "country": "United States", "region": "North America", "type": "gallery", "note": "22nd Street, Chelsea" },
+    { "id": "perrotin-ny", "name": "Perrotin", "city": "New York", "country": "United States", "region": "North America", "type": "gallery", "note": "" },
+    { "id": "ago", "name": "Art Gallery of Ontario (AGO)", "city": "Toronto", "country": "Canada", "region": "North America", "type": "museum", "note": "" },
+    { "id": "ngc", "name": "National Gallery of Canada", "city": "Ottawa", "country": "Canada", "region": "North America", "type": "museum", "note": "" },
+    { "id": "mmfa", "name": "Montreal Museum of Fine Arts", "city": "Montreal", "country": "Canada", "region": "North America", "type": "museum", "note": "" },
+    { "id": "vag", "name": "Vancouver Art Gallery", "city": "Vancouver", "country": "Canada", "region": "North America", "type": "museum", "note": "" },
+
+    { "id": "masp", "name": "MASP – Museu de Arte de São Paulo", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "museum", "note": "Latin America's most important art museum" },
+    { "id": "pinacoteca", "name": "Pinacoteca de São Paulo", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "museum", "note": "São Paulo's oldest museum, including Pina Contemporânea and Pina Estação" },
+    { "id": "mam-sp", "name": "MAM São Paulo", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "museum", "note": "Museu de Arte Moderna in Ibirapuera Park" },
+    { "id": "mac-usp", "name": "MAC USP", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "museum", "note": "Museu de Arte Contemporânea da Universidade de São Paulo" },
+    { "id": "tomie-ohtake", "name": "Instituto Tomie Ohtake", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "museum", "note": "" },
+    { "id": "ccbb-sp", "name": "CCBB São Paulo", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "museum", "note": "Centro Cultural Banco do Brasil" },
+    { "id": "sesc-pompeia", "name": "SESC Pompeia", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "museum", "note": "Cultural center designed by Lina Bo Bardi" },
+    { "id": "japan-house-sp", "name": "Japan House São Paulo", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "museum", "note": "" },
+    { "id": "ims-sp", "name": "IMS – Instituto Moreira Salles", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "museum", "note": "Photography and visual arts on Paulista Avenue" },
+    { "id": "luisa-strina", "name": "Galeria Luisa Strina", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "gallery", "note": "Brazil's oldest and most respected contemporary gallery" },
+    { "id": "mendes-wood-dm", "name": "Mendes Wood DM", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "gallery", "note": "Also in Brussels, New York" },
+    { "id": "fortes-daloia-gabriel", "name": "Galeria Fortes D'Aloia & Gabriel", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "gallery", "note": "Leading Brazilian contemporary gallery" },
+    { "id": "nara-roesler", "name": "Galeria Nara Roesler", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "gallery", "note": "Also in Rio and New York" },
+    { "id": "casa-triangulo", "name": "Casa Triângulo", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "gallery", "note": "" },
+    { "id": "galeria-millan", "name": "Galeria Millan", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "gallery", "note": "" },
+    { "id": "pivô", "name": "Pivô", "city": "São Paulo", "country": "Brazil", "region": "South America", "type": "gallery", "note": "Artist-run space at the Copan Building" },
+    { "id": "inhotim", "name": "Instituto Inhotim", "city": "Brumadinho", "country": "Brazil", "region": "South America", "type": "museum", "note": "World's largest open-air contemporary art museum and botanical garden" },
+    { "id": "mam-rio", "name": "MAM Rio", "city": "Rio de Janeiro", "country": "Brazil", "region": "South America", "type": "museum", "note": "Museu de Arte Moderna in Flamengo Park" },
+    { "id": "mac-niteroi", "name": "MAC Niterói", "city": "Niterói", "country": "Brazil", "region": "South America", "type": "museum", "note": "Oscar Niemeyer's iconic saucer-shaped museum" },
+    { "id": "mar-rio", "name": "MAR – Museu de Arte do Rio", "city": "Rio de Janeiro", "country": "Brazil", "region": "South America", "type": "museum", "note": "" },
+    { "id": "ccbb-rio", "name": "CCBB Rio de Janeiro", "city": "Rio de Janeiro", "country": "Brazil", "region": "South America", "type": "museum", "note": "Centro Cultural Banco do Brasil" },
+    { "id": "ims-rio", "name": "IMS Rio", "city": "Rio de Janeiro", "country": "Brazil", "region": "South America", "type": "museum", "note": "Instituto Moreira Salles in Gávea" },
+    { "id": "gentil-carioca", "name": "A Gentil Carioca", "city": "Rio de Janeiro", "country": "Brazil", "region": "South America", "type": "gallery", "note": "Artist-run gallery in downtown Rio" },
+    { "id": "malba", "name": "MALBA", "city": "Buenos Aires", "country": "Argentina", "region": "South America", "type": "museum", "note": "Museo de Arte Latinoamericano de Buenos Aires" },
+    { "id": "fundacion-proa", "name": "Fundación Proa", "city": "Buenos Aires", "country": "Argentina", "region": "South America", "type": "museum", "note": "Contemporary art in La Boca" },
+    { "id": "museo-jumex", "name": "Museo Jumex", "city": "Mexico City", "country": "Mexico", "region": "South America", "type": "museum", "note": "Mexico's leading contemporary art museum" },
+    { "id": "muac", "name": "MUAC", "city": "Mexico City", "country": "Mexico", "region": "South America", "type": "museum", "note": "Museo Universitario Arte Contemporáneo" },
+    { "id": "museo-tamayo", "name": "Museo Tamayo", "city": "Mexico City", "country": "Mexico", "region": "South America", "type": "museum", "note": "International contemporary art in Chapultepec" },
+    { "id": "kurimanzutto", "name": "kurimanzutto", "city": "Mexico City", "country": "Mexico", "region": "South America", "type": "gallery", "note": "Leading Latin American contemporary gallery" },
+    { "id": "mambo-bogota", "name": "MAMBO", "city": "Bogotá", "country": "Colombia", "region": "South America", "type": "museum", "note": "Museo de Arte Moderno de Bogotá" },
+    { "id": "mali", "name": "MALI – Museo de Arte de Lima", "city": "Lima", "country": "Peru", "region": "South America", "type": "museum", "note": "" },
+
+    { "id": "tate-modern", "name": "Tate Modern", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "museum", "note": "International modern and contemporary art" },
+    { "id": "tate-britain", "name": "Tate Britain", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "museum", "note": "British art from 1500 to today" },
+    { "id": "national-gallery-london", "name": "The National Gallery", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "serpentine", "name": "Serpentine Galleries", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "museum", "note": "Contemporary art in Kensington Gardens" },
+    { "id": "hayward", "name": "Hayward Gallery", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "museum", "note": "Southbank Centre" },
+    { "id": "ica-london", "name": "ICA London", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "museum", "note": "Institute of Contemporary Arts" },
+    { "id": "royal-academy", "name": "Royal Academy of Arts", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "whitechapel", "name": "Whitechapel Gallery", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "white-cube", "name": "White Cube", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "gallery", "note": "Bermondsey and Mason's Yard" },
+    { "id": "lisson", "name": "Lisson Gallery", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "gallery", "note": "" },
+    { "id": "saatchi", "name": "Saatchi Gallery", "city": "London", "country": "United Kingdom", "region": "Europe", "type": "gallery", "note": "" },
+    { "id": "louvre", "name": "Musée du Louvre", "city": "Paris", "country": "France", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "orsay", "name": "Musée d'Orsay", "city": "Paris", "country": "France", "region": "Europe", "type": "museum", "note": "Impressionism and post-Impressionism" },
+    { "id": "pompidou", "name": "Centre Pompidou", "city": "Paris", "country": "France", "region": "Europe", "type": "museum", "note": "Modern and contemporary art — closed for renovation until 2030, satellite locations open" },
+    { "id": "palais-de-tokyo", "name": "Palais de Tokyo", "city": "Paris", "country": "France", "region": "Europe", "type": "museum", "note": "Europe's largest contemporary art center" },
+    { "id": "fondation-cartier", "name": "Fondation Cartier", "city": "Paris", "country": "France", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "fondation-lv", "name": "Fondation Louis Vuitton", "city": "Paris", "country": "France", "region": "Europe", "type": "museum", "note": "Frank Gehry-designed museum in the Bois de Boulogne" },
+    { "id": "bourse-de-commerce", "name": "Bourse de Commerce – Pinault Collection", "city": "Paris", "country": "France", "region": "Europe", "type": "museum", "note": "Tadao Ando-renovated space for the Pinault Collection" },
+    { "id": "perrotin-paris", "name": "Perrotin", "city": "Paris", "country": "France", "region": "Europe", "type": "gallery", "note": "" },
+    { "id": "hamburger-bahnhof", "name": "Hamburger Bahnhof", "city": "Berlin", "country": "Germany", "region": "Europe", "type": "museum", "note": "Museum for Contemporary Art" },
+    { "id": "kw-berlin", "name": "KW Institute for Contemporary Art", "city": "Berlin", "country": "Germany", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "neue-nationalgalerie", "name": "Neue Nationalgalerie", "city": "Berlin", "country": "Germany", "region": "Europe", "type": "museum", "note": "Mies van der Rohe building, 20th century art" },
+    { "id": "museum-ludwig", "name": "Museum Ludwig", "city": "Cologne", "country": "Germany", "region": "Europe", "type": "museum", "note": "Major Pop Art and contemporary art collection" },
+    { "id": "pinakothek-der-moderne", "name": "Pinakothek der Moderne", "city": "Munich", "country": "Germany", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "spruth-magers", "name": "Sprüth Magers", "city": "Berlin", "country": "Germany", "region": "Europe", "type": "gallery", "note": "Also in London, Los Angeles" },
+    { "id": "palazzo-grassi", "name": "Palazzo Grassi", "city": "Venice", "country": "Italy", "region": "Europe", "type": "museum", "note": "Pinault Collection" },
+    { "id": "punta-della-dogana", "name": "Punta della Dogana", "city": "Venice", "country": "Italy", "region": "Europe", "type": "museum", "note": "Pinault Collection, contemporary art" },
+    { "id": "fondazione-prada", "name": "Fondazione Prada", "city": "Milan", "country": "Italy", "region": "Europe", "type": "museum", "note": "OMA-designed complex for contemporary art" },
+    { "id": "maxxi", "name": "MAXXI", "city": "Rome", "country": "Italy", "region": "Europe", "type": "museum", "note": "National Museum of 21st Century Art, Zaha Hadid building" },
+    { "id": "galleria-borghese", "name": "Galleria Borghese", "city": "Rome", "country": "Italy", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "uffizi", "name": "Gallerie degli Uffizi", "city": "Florence", "country": "Italy", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "prado", "name": "Museo del Prado", "city": "Madrid", "country": "Spain", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "reina-sofia", "name": "Museo Reina Sofía", "city": "Madrid", "country": "Spain", "region": "Europe", "type": "museum", "note": "Home of Guernica" },
+    { "id": "macba-barcelona", "name": "MACBA", "city": "Barcelona", "country": "Spain", "region": "Europe", "type": "museum", "note": "Museu d'Art Contemporani de Barcelona" },
+    { "id": "guggenheim-bilbao", "name": "Guggenheim Bilbao", "city": "Bilbao", "country": "Spain", "region": "Europe", "type": "museum", "note": "Frank Gehry's iconic museum" },
+    { "id": "fundacio-miro", "name": "Fundació Joan Miró", "city": "Barcelona", "country": "Spain", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "rijksmuseum", "name": "Rijksmuseum", "city": "Amsterdam", "country": "Netherlands", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "stedelijk", "name": "Stedelijk Museum", "city": "Amsterdam", "country": "Netherlands", "region": "Europe", "type": "museum", "note": "Modern and contemporary art and design" },
+    { "id": "van-gogh-museum", "name": "Van Gogh Museum", "city": "Amsterdam", "country": "Netherlands", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "kunsthaus-zurich", "name": "Kunsthaus Zürich", "city": "Zürich", "country": "Switzerland", "region": "Europe", "type": "museum", "note": "David Chipperfield extension opened 2021" },
+    { "id": "fondation-beyeler", "name": "Fondation Beyeler", "city": "Basel", "country": "Switzerland", "region": "Europe", "type": "museum", "note": "Renzo Piano building in Riehen" },
+    { "id": "kunstmuseum-basel", "name": "Kunstmuseum Basel", "city": "Basel", "country": "Switzerland", "region": "Europe", "type": "museum", "note": "One of the oldest public art collections in the world" },
+    { "id": "kunsthistorisches", "name": "Kunsthistorisches Museum", "city": "Vienna", "country": "Austria", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "mumok", "name": "MUMOK", "city": "Vienna", "country": "Austria", "region": "Europe", "type": "museum", "note": "Museum Moderner Kunst in the MuseumsQuartier" },
+    { "id": "belvedere", "name": "Belvedere", "city": "Vienna", "country": "Austria", "region": "Europe", "type": "museum", "note": "Home of Klimt's The Kiss" },
+    { "id": "louisiana", "name": "Louisiana Museum of Modern Art", "city": "Humlebæk", "country": "Denmark", "region": "Europe", "type": "museum", "note": "North of Copenhagen, overlooking the Øresund strait" },
+    { "id": "moderna-museet", "name": "Moderna Museet", "city": "Stockholm", "country": "Sweden", "region": "Europe", "type": "museum", "note": "" },
+    { "id": "kiasma", "name": "Kiasma – Museum of Contemporary Art", "city": "Helsinki", "country": "Finland", "region": "Europe", "type": "museum", "note": "Steven Holl building" },
+
+    { "id": "louvre-abu-dhabi", "name": "Louvre Abu Dhabi", "city": "Abu Dhabi", "country": "United Arab Emirates", "region": "Middle East", "type": "museum", "note": "Jean Nouvel's universal museum on Saadiyat Island" },
+    { "id": "guggenheim-abu-dhabi", "name": "Guggenheim Abu Dhabi", "city": "Abu Dhabi", "country": "United Arab Emirates", "region": "Middle East", "type": "museum", "note": "Frank Gehry-designed, expected opening 2025-2026" },
+    { "id": "jameel-arts-centre", "name": "Jameel Arts Centre", "city": "Dubai", "country": "United Arab Emirates", "region": "Middle East", "type": "museum", "note": "Contemporary art research and exhibitions" },
+    { "id": "sharjah-art-foundation", "name": "Sharjah Art Foundation", "city": "Sharjah", "country": "United Arab Emirates", "region": "Middle East", "type": "museum", "note": "Key institution for contemporary art in the Gulf" },
+    { "id": "ithra", "name": "Ithra – King Abdulaziz Center for World Culture", "city": "Dhahran", "country": "Saudi Arabia", "region": "Middle East", "type": "museum", "note": "Snøhetta-designed cultural center" },
+    { "id": "mathaf", "name": "Mathaf: Arab Museum of Modern Art", "city": "Doha", "country": "Qatar", "region": "Middle East", "type": "museum", "note": "" },
+    { "id": "national-museum-qatar", "name": "National Museum of Qatar", "city": "Doha", "country": "Qatar", "region": "Middle East", "type": "museum", "note": "Jean Nouvel 'Desert Rose' building" },
+    { "id": "israel-museum", "name": "Israel Museum", "city": "Jerusalem", "country": "Israel", "region": "Middle East", "type": "museum", "note": "Includes the Shrine of the Book" },
+    { "id": "tel-aviv-museum", "name": "Tel Aviv Museum of Art", "city": "Tel Aviv", "country": "Israel", "region": "Middle East", "type": "museum", "note": "" },
+
+    { "id": "mori", "name": "Mori Art Museum", "city": "Tokyo", "country": "Japan", "region": "Asia", "type": "museum", "note": "Contemporary art atop Roppongi Hills" },
+    { "id": "21st-century-kanazawa", "name": "21st Century Museum of Contemporary Art", "city": "Kanazawa", "country": "Japan", "region": "Asia", "type": "museum", "note": "SANAA-designed circular museum" },
+    { "id": "naoshima", "name": "Benesse Art Site Naoshima", "city": "Naoshima Island", "country": "Japan", "region": "Asia", "type": "museum", "note": "Tadao Ando museums on Japan's 'art island'" },
+    { "id": "teamlab-borderless", "name": "teamLab Borderless", "city": "Tokyo", "country": "Japan", "region": "Asia", "type": "museum", "note": "Immersive digital art museum at Azabudai Hills" },
+    { "id": "national-art-center-tokyo", "name": "National Art Center, Tokyo", "city": "Tokyo", "country": "Japan", "region": "Asia", "type": "museum", "note": "Kisho Kurokawa building, no permanent collection" },
+    { "id": "mplus", "name": "M+", "city": "Hong Kong", "country": "China", "region": "Asia", "type": "museum", "note": "Asia's leading museum of visual culture in the West Kowloon Cultural District" },
+    { "id": "ucca", "name": "UCCA Center for Contemporary Art", "city": "Beijing", "country": "China", "region": "Asia", "type": "museum", "note": "China's leading contemporary art institution" },
+    { "id": "power-station-of-art", "name": "Power Station of Art", "city": "Shanghai", "country": "China", "region": "Asia", "type": "museum", "note": "China's first state-run contemporary art museum" },
+    { "id": "long-museum", "name": "Long Museum West Bund", "city": "Shanghai", "country": "China", "region": "Asia", "type": "museum", "note": "" },
+    { "id": "leeum", "name": "Leeum Museum of Art", "city": "Seoul", "country": "South Korea", "region": "Asia", "type": "museum", "note": "Samsung foundation, buildings by OMA, Nouvel, and Botta" },
+    { "id": "mmca-seoul", "name": "MMCA – National Museum of Modern and Contemporary Art", "city": "Seoul", "country": "South Korea", "region": "Asia", "type": "museum", "note": "" },
+    { "id": "amorepacific", "name": "Amorepacific Museum of Art", "city": "Seoul", "country": "South Korea", "region": "Asia", "type": "museum", "note": "David Chipperfield building" },
+    { "id": "national-gallery-singapore", "name": "National Gallery Singapore", "city": "Singapore", "country": "Singapore", "region": "Asia", "type": "museum", "note": "Southeast Asian modern art" },
+    { "id": "artscience-museum", "name": "ArtScience Museum", "city": "Singapore", "country": "Singapore", "region": "Asia", "type": "museum", "note": "Moshe Safdie building at Marina Bay Sands" },
+    { "id": "kiran-nadar", "name": "Kiran Nadar Museum of Art", "city": "New Delhi", "country": "India", "region": "Asia", "type": "museum", "note": "India's leading private art museum" },
+
+    { "id": "mca-sydney", "name": "Museum of Contemporary Art Australia", "city": "Sydney", "country": "Australia", "region": "Oceania", "type": "museum", "note": "" },
+    { "id": "ngv", "name": "National Gallery of Victoria (NGV)", "city": "Melbourne", "country": "Australia", "region": "Oceania", "type": "museum", "note": "Australia's oldest and most visited art museum" },
+    { "id": "agnsw", "name": "Art Gallery of New South Wales", "city": "Sydney", "country": "Australia", "region": "Oceania", "type": "museum", "note": "Including the new Sydney Modern Project" },
+    { "id": "te-papa", "name": "Te Papa Tongarewa", "city": "Wellington", "country": "New Zealand", "region": "Oceania", "type": "museum", "note": "New Zealand's national museum" },
+    { "id": "auckland-art-gallery", "name": "Auckland Art Gallery Toi o Tāmaki", "city": "Auckland", "country": "New Zealand", "region": "Oceania", "type": "museum", "note": "" },
+
+    { "id": "zeitz-mocaa", "name": "Zeitz MOCAA", "city": "Cape Town", "country": "South Africa", "region": "Africa", "type": "museum", "note": "Africa's largest museum of contemporary art, in a converted grain silo" },
+    { "id": "norval", "name": "Norval Foundation", "city": "Cape Town", "country": "South Africa", "region": "Africa", "type": "museum", "note": "South African and international art" },
+    { "id": "goodman", "name": "Goodman Gallery", "city": "Johannesburg", "country": "South Africa", "region": "Africa", "type": "gallery", "note": "Also in Cape Town and London" },
+    { "id": "macaal", "name": "MACAAL – Museum of African Contemporary Art Al Maaden", "city": "Marrakech", "country": "Morocco", "region": "Africa", "type": "museum", "note": "" },
+    { "id": "museum-african-art-marrakech", "name": "Musée Yves Saint Laurent Marrakech", "city": "Marrakech", "country": "Morocco", "region": "Africa", "type": "museum", "note": "Studio KO-designed museum and cultural center" },
+    { "id": "nike-art-gallery", "name": "Nike Art Gallery", "city": "Lagos", "country": "Nigeria", "region": "Africa", "type": "gallery", "note": "Nigeria's largest art gallery" }
+  ]
 }
