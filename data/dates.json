@@ -1,0 +1,600 @@
+{
+  "meta": {
+    "category": "dates",
+    "label": "Important Dates",
+    "color": "#d4a06a",
+    "last_updated": "2026-03-27"
+  },
+  "categories": [
+    { "id": "brazil-dates", "label": "Brasil",  "color": "#4dcca0" },
+    { "id": "us-dates",     "label": "United States", "color": "#6ab0f5" },
+    { "id": "europe-dates", "label": "Europe",  "color": "#e0a840" }
+  ],
+  "events": [
+    {
+      "id": "br-ano-novo",
+      "cat": "brazil-dates",
+      "name": "Ano Novo",
+      "date": "Jan 1, 2026",
+      "date_sort": "2026-01-01",
+      "location": "Brasil",
+      "note": "Feriado nacional"
+    },
+    {
+      "id": "us-new-year",
+      "cat": "us-dates",
+      "name": "New Year's Day",
+      "date": "Jan 1, 2026",
+      "date_sort": "2026-01-01",
+      "location": "United States",
+      "note": "Federal holiday"
+    },
+    {
+      "id": "eu-new-year",
+      "cat": "europe-dates",
+      "name": "New Year's Day",
+      "date": "Jan 1, 2026",
+      "date_sort": "2026-01-01",
+      "location": "Europe",
+      "note": "Public holiday across Europe"
+    },
+    {
+      "id": "us-mlk-day",
+      "cat": "us-dates",
+      "name": "Martin Luther King Jr. Day",
+      "date": "Jan 19, 2026",
+      "date_sort": "2026-01-19",
+      "location": "United States",
+      "note": "Federal holiday — third Monday of January"
+    },
+    {
+      "id": "us-groundhog",
+      "cat": "us-dates",
+      "name": "Groundhog Day",
+      "date": "Feb 2, 2026",
+      "date_sort": "2026-02-02",
+      "location": "United States",
+      "note": ""
+    },
+    {
+      "id": "us-valentines",
+      "cat": "us-dates",
+      "name": "Valentine's Day",
+      "date": "Feb 14, 2026",
+      "date_sort": "2026-02-14",
+      "location": "United States",
+      "note": ""
+    },
+    {
+      "id": "eu-valentines",
+      "cat": "europe-dates",
+      "name": "Valentine's Day",
+      "date": "Feb 14, 2026",
+      "date_sort": "2026-02-14",
+      "location": "Europe",
+      "note": "Celebrated across most European countries"
+    },
+    {
+      "id": "us-presidents-day",
+      "cat": "us-dates",
+      "name": "Presidents' Day",
+      "date": "Feb 16, 2026",
+      "date_sort": "2026-02-16",
+      "location": "United States",
+      "note": "Federal holiday — third Monday of February"
+    },
+    {
+      "id": "br-carnaval",
+      "cat": "brazil-dates",
+      "name": "Carnaval",
+      "date": "Fev 14 – 17, 2026",
+      "date_sort": "2026-02-14",
+      "location": "Brasil",
+      "note": "Ponto facultativo nacional — sábado a terça-feira de Carnaval"
+    },
+    {
+      "id": "br-quarta-cinzas",
+      "cat": "brazil-dates",
+      "name": "Quarta-feira de Cinzas",
+      "date": "Fev 18, 2026",
+      "date_sort": "2026-02-18",
+      "location": "Brasil",
+      "note": "Ponto facultativo até meio-dia"
+    },
+    {
+      "id": "br-dia-mulher",
+      "cat": "brazil-dates",
+      "name": "Dia Internacional da Mulher",
+      "date": "Mar 8, 2026",
+      "date_sort": "2026-03-08",
+      "location": "Brasil",
+      "note": ""
+    },
+    {
+      "id": "eu-intl-womens-day",
+      "cat": "europe-dates",
+      "name": "International Women's Day",
+      "date": "Mar 8, 2026",
+      "date_sort": "2026-03-08",
+      "location": "Europe",
+      "note": "Public holiday in some European countries"
+    },
+    {
+      "id": "us-st-patricks",
+      "cat": "us-dates",
+      "name": "St. Patrick's Day",
+      "date": "Mar 17, 2026",
+      "date_sort": "2026-03-17",
+      "location": "United States",
+      "note": ""
+    },
+    {
+      "id": "eu-st-patricks",
+      "cat": "europe-dates",
+      "name": "St. Patrick's Day",
+      "date": "Mar 17, 2026",
+      "date_sort": "2026-03-17",
+      "location": "Ireland / Europe",
+      "note": "National holiday in Ireland, celebrated across Europe"
+    },
+    {
+      "id": "eu-spring-equinox",
+      "cat": "europe-dates",
+      "name": "Spring Equinox",
+      "date": "Mar 20, 2026",
+      "date_sort": "2026-03-20",
+      "location": "Europe",
+      "note": ""
+    },
+    {
+      "id": "br-sexta-santa",
+      "cat": "brazil-dates",
+      "name": "Sexta-feira Santa",
+      "date": "Abr 3, 2026",
+      "date_sort": "2026-04-03",
+      "location": "Brasil",
+      "note": "Feriado nacional"
+    },
+    {
+      "id": "br-pascoa",
+      "cat": "brazil-dates",
+      "name": "Páscoa",
+      "date": "Abr 5, 2026",
+      "date_sort": "2026-04-05",
+      "location": "Brasil",
+      "note": ""
+    },
+    {
+      "id": "us-easter",
+      "cat": "us-dates",
+      "name": "Easter Sunday",
+      "date": "Apr 5, 2026",
+      "date_sort": "2026-04-05",
+      "location": "United States",
+      "note": ""
+    },
+    {
+      "id": "eu-good-friday",
+      "cat": "europe-dates",
+      "name": "Good Friday",
+      "date": "Apr 3, 2026",
+      "date_sort": "2026-04-03",
+      "location": "Europe",
+      "note": "Public holiday in most European countries"
+    },
+    {
+      "id": "eu-easter",
+      "cat": "europe-dates",
+      "name": "Easter Monday",
+      "date": "Apr 6, 2026",
+      "date_sort": "2026-04-06",
+      "location": "Europe",
+      "note": "Public holiday across most of Europe"
+    },
+    {
+      "id": "br-tiradentes",
+      "cat": "brazil-dates",
+      "name": "Tiradentes",
+      "date": "Abr 21, 2026",
+      "date_sort": "2026-04-21",
+      "location": "Brasil",
+      "note": "Feriado nacional — homenagem ao mártir da Inconfidência Mineira"
+    },
+    {
+      "id": "br-dia-trabalho",
+      "cat": "brazil-dates",
+      "name": "Dia do Trabalho",
+      "date": "Mai 1, 2026",
+      "date_sort": "2026-05-01",
+      "location": "Brasil",
+      "note": "Feriado nacional"
+    },
+    {
+      "id": "eu-labour-day",
+      "cat": "europe-dates",
+      "name": "Labour Day / May Day",
+      "date": "May 1, 2026",
+      "date_sort": "2026-05-01",
+      "location": "Europe",
+      "note": "Public holiday in most European countries"
+    },
+    {
+      "id": "eu-europe-day",
+      "cat": "europe-dates",
+      "name": "Europe Day",
+      "date": "May 9, 2026",
+      "date_sort": "2026-05-09",
+      "location": "European Union",
+      "note": "Celebrates peace and unity in Europe"
+    },
+    {
+      "id": "br-dia-maes",
+      "cat": "brazil-dates",
+      "name": "Dia das Mães",
+      "date": "Mai 10, 2026",
+      "date_sort": "2026-05-10",
+      "location": "Brasil",
+      "note": "Segundo domingo de maio"
+    },
+    {
+      "id": "us-mothers-day",
+      "cat": "us-dates",
+      "name": "Mother's Day",
+      "date": "May 10, 2026",
+      "date_sort": "2026-05-10",
+      "location": "United States",
+      "note": "Second Sunday of May"
+    },
+    {
+      "id": "eu-mothers-day-uk",
+      "cat": "europe-dates",
+      "name": "Mother's Day (UK — Mothering Sunday)",
+      "date": "Mar 22, 2026",
+      "date_sort": "2026-03-22",
+      "location": "United Kingdom",
+      "note": "Fourth Sunday of Lent"
+    },
+    {
+      "id": "eu-mothers-day-fr",
+      "cat": "europe-dates",
+      "name": "Fête des Mères (France)",
+      "date": "May 31, 2026",
+      "date_sort": "2026-05-31",
+      "location": "France",
+      "note": "Last Sunday of May"
+    },
+    {
+      "id": "us-memorial-day",
+      "cat": "us-dates",
+      "name": "Memorial Day",
+      "date": "May 25, 2026",
+      "date_sort": "2026-05-25",
+      "location": "United States",
+      "note": "Federal holiday — last Monday of May"
+    },
+    {
+      "id": "br-corpus-christi",
+      "cat": "brazil-dates",
+      "name": "Corpus Christi",
+      "date": "Jun 4, 2026",
+      "date_sort": "2026-06-04",
+      "location": "Brasil",
+      "note": "Feriado nacional"
+    },
+    {
+      "id": "br-dia-namorados",
+      "cat": "brazil-dates",
+      "name": "Dia dos Namorados",
+      "date": "Jun 12, 2026",
+      "date_sort": "2026-06-12",
+      "location": "Brasil",
+      "note": "Dia dos Namorados no Brasil (equivalente ao Valentine's Day)"
+    },
+    {
+      "id": "br-festas-juninas",
+      "cat": "brazil-dates",
+      "name": "Festas Juninas",
+      "date": "Jun 2026",
+      "date_sort": "2026-06-13",
+      "location": "Brasil",
+      "note": "Festas de Santo Antônio (13), São João (24) e São Pedro (29)"
+    },
+    {
+      "id": "us-fathers-day",
+      "cat": "us-dates",
+      "name": "Father's Day",
+      "date": "Jun 21, 2026",
+      "date_sort": "2026-06-21",
+      "location": "United States",
+      "note": "Third Sunday of June"
+    },
+    {
+      "id": "eu-fathers-day",
+      "cat": "europe-dates",
+      "name": "Father's Day (Europe varies)",
+      "date": "Jun 21, 2026",
+      "date_sort": "2026-06-21",
+      "location": "UK, France, Netherlands",
+      "note": "Third Sunday of June in most European countries; March 19 in Italy, Spain, Portugal"
+    },
+    {
+      "id": "eu-midsummer",
+      "cat": "europe-dates",
+      "name": "Midsummer / Summer Solstice",
+      "date": "Jun 20 – 21, 2026",
+      "date_sort": "2026-06-20",
+      "location": "Scandinavia / Europe",
+      "note": "Major celebration in Nordic countries"
+    },
+    {
+      "id": "us-independence-day",
+      "cat": "us-dates",
+      "name": "Independence Day (4th of July)",
+      "date": "Jul 4, 2026",
+      "date_sort": "2026-07-04",
+      "location": "United States",
+      "note": "Federal holiday"
+    },
+    {
+      "id": "eu-bastille-day",
+      "cat": "europe-dates",
+      "name": "Bastille Day (France)",
+      "date": "Jul 14, 2026",
+      "date_sort": "2026-07-14",
+      "location": "France",
+      "note": "Fête nationale française"
+    },
+    {
+      "id": "br-dia-pais",
+      "cat": "brazil-dates",
+      "name": "Dia dos Pais",
+      "date": "Ago 9, 2026",
+      "date_sort": "2026-08-09",
+      "location": "Brasil",
+      "note": "Segundo domingo de agosto"
+    },
+    {
+      "id": "eu-assumption",
+      "cat": "europe-dates",
+      "name": "Assumption of Mary",
+      "date": "Aug 15, 2026",
+      "date_sort": "2026-08-15",
+      "location": "Europe",
+      "note": "Public holiday in France, Italy, Spain, Portugal, and others"
+    },
+    {
+      "id": "us-labor-day",
+      "cat": "us-dates",
+      "name": "Labor Day",
+      "date": "Sep 7, 2026",
+      "date_sort": "2026-09-07",
+      "location": "United States",
+      "note": "Federal holiday — first Monday of September"
+    },
+    {
+      "id": "br-independencia",
+      "cat": "brazil-dates",
+      "name": "Dia da Independência",
+      "date": "Set 7, 2026",
+      "date_sort": "2026-09-07",
+      "location": "Brasil",
+      "note": "Feriado nacional — Independência do Brasil (1822)"
+    },
+    {
+      "id": "eu-oktoberfest",
+      "cat": "europe-dates",
+      "name": "Oktoberfest (Munich)",
+      "date": "Sep 19 – Oct 4, 2026",
+      "date_sort": "2026-09-19",
+      "location": "Munich, Germany",
+      "note": "World's largest folk festival"
+    },
+    {
+      "id": "br-nossa-senhora",
+      "cat": "brazil-dates",
+      "name": "Nossa Senhora Aparecida",
+      "date": "Out 12, 2026",
+      "date_sort": "2026-10-12",
+      "location": "Brasil",
+      "note": "Feriado nacional — Padroeira do Brasil. Também Dia das Crianças"
+    },
+    {
+      "id": "br-dia-criancas",
+      "cat": "brazil-dates",
+      "name": "Dia das Crianças",
+      "date": "Out 12, 2026",
+      "date_sort": "2026-10-12",
+      "location": "Brasil",
+      "note": ""
+    },
+    {
+      "id": "us-columbus-day",
+      "cat": "us-dates",
+      "name": "Columbus Day / Indigenous Peoples' Day",
+      "date": "Oct 12, 2026",
+      "date_sort": "2026-10-12",
+      "location": "United States",
+      "note": "Federal holiday — second Monday of October"
+    },
+    {
+      "id": "eu-german-unity",
+      "cat": "europe-dates",
+      "name": "German Unity Day",
+      "date": "Oct 3, 2026",
+      "date_sort": "2026-10-03",
+      "location": "Germany",
+      "note": "Tag der Deutschen Einheit"
+    },
+    {
+      "id": "us-halloween",
+      "cat": "us-dates",
+      "name": "Halloween",
+      "date": "Oct 31, 2026",
+      "date_sort": "2026-10-31",
+      "location": "United States",
+      "note": ""
+    },
+    {
+      "id": "eu-halloween",
+      "cat": "europe-dates",
+      "name": "Halloween",
+      "date": "Oct 31, 2026",
+      "date_sort": "2026-10-31",
+      "location": "Europe",
+      "note": "Widely celebrated, especially in UK and Ireland"
+    },
+    {
+      "id": "eu-all-saints",
+      "cat": "europe-dates",
+      "name": "All Saints' Day",
+      "date": "Nov 1, 2026",
+      "date_sort": "2026-11-01",
+      "location": "Europe",
+      "note": "Public holiday in France, Spain, Italy, Portugal, and others"
+    },
+    {
+      "id": "br-finados",
+      "cat": "brazil-dates",
+      "name": "Dia de Finados",
+      "date": "Nov 2, 2026",
+      "date_sort": "2026-11-02",
+      "location": "Brasil",
+      "note": "Feriado nacional"
+    },
+    {
+      "id": "us-veterans-day",
+      "cat": "us-dates",
+      "name": "Veterans Day",
+      "date": "Nov 11, 2026",
+      "date_sort": "2026-11-11",
+      "location": "United States",
+      "note": "Federal holiday"
+    },
+    {
+      "id": "eu-armistice-day",
+      "cat": "europe-dates",
+      "name": "Armistice Day / Remembrance Day",
+      "date": "Nov 11, 2026",
+      "date_sort": "2026-11-11",
+      "location": "France, UK, Belgium",
+      "note": "Public holiday in France and Belgium"
+    },
+    {
+      "id": "br-consciencia-negra",
+      "cat": "brazil-dates",
+      "name": "Dia da Consciência Negra",
+      "date": "Nov 20, 2026",
+      "date_sort": "2026-11-20",
+      "location": "Brasil",
+      "note": "Feriado nacional desde 2024"
+    },
+    {
+      "id": "br-proclamacao-republica",
+      "cat": "brazil-dates",
+      "name": "Proclamação da República",
+      "date": "Nov 15, 2026",
+      "date_sort": "2026-11-15",
+      "location": "Brasil",
+      "note": "Feriado nacional — proclamação em 1889"
+    },
+    {
+      "id": "us-thanksgiving",
+      "cat": "us-dates",
+      "name": "Thanksgiving",
+      "date": "Nov 26, 2026",
+      "date_sort": "2026-11-26",
+      "location": "United States",
+      "note": "Federal holiday — fourth Thursday of November"
+    },
+    {
+      "id": "us-black-friday",
+      "cat": "us-dates",
+      "name": "Black Friday",
+      "date": "Nov 27, 2026",
+      "date_sort": "2026-11-27",
+      "location": "United States",
+      "note": "Day after Thanksgiving — major shopping day"
+    },
+    {
+      "id": "eu-st-nicholas",
+      "cat": "europe-dates",
+      "name": "St. Nicholas Day",
+      "date": "Dec 5 – 6, 2026",
+      "date_sort": "2026-12-05",
+      "location": "Netherlands, Belgium, Germany",
+      "note": "Sinterklaas (Dec 5 in NL/BE), Nikolaustag (Dec 6 in DE)"
+    },
+    {
+      "id": "eu-immaculate-conception",
+      "cat": "europe-dates",
+      "name": "Immaculate Conception",
+      "date": "Dec 8, 2026",
+      "date_sort": "2026-12-08",
+      "location": "Spain, Italy, Portugal",
+      "note": "Public holiday in several Catholic countries"
+    },
+    {
+      "id": "br-natal",
+      "cat": "brazil-dates",
+      "name": "Natal",
+      "date": "Dez 25, 2026",
+      "date_sort": "2026-12-25",
+      "location": "Brasil",
+      "note": "Feriado nacional"
+    },
+    {
+      "id": "us-christmas",
+      "cat": "us-dates",
+      "name": "Christmas Day",
+      "date": "Dec 25, 2026",
+      "date_sort": "2026-12-25",
+      "location": "United States",
+      "note": "Federal holiday"
+    },
+    {
+      "id": "eu-christmas",
+      "cat": "europe-dates",
+      "name": "Christmas Day",
+      "date": "Dec 25, 2026",
+      "date_sort": "2026-12-25",
+      "location": "Europe",
+      "note": "Public holiday across Europe"
+    },
+    {
+      "id": "eu-st-stephens",
+      "cat": "europe-dates",
+      "name": "St. Stephen's Day / Boxing Day",
+      "date": "Dec 26, 2026",
+      "date_sort": "2026-12-26",
+      "location": "UK, Germany, Ireland, Italy",
+      "note": "Public holiday in many European countries"
+    },
+    {
+      "id": "br-reveillon",
+      "cat": "brazil-dates",
+      "name": "Réveillon / Véspera de Ano Novo",
+      "date": "Dez 31, 2026",
+      "date_sort": "2026-12-31",
+      "location": "Brasil",
+      "note": "Ponto facultativo"
+    },
+    {
+      "id": "us-new-years-eve",
+      "cat": "us-dates",
+      "name": "New Year's Eve",
+      "date": "Dec 31, 2026",
+      "date_sort": "2026-12-31",
+      "location": "United States",
+      "note": ""
+    },
+    {
+      "id": "eu-new-years-eve",
+      "cat": "europe-dates",
+      "name": "New Year's Eve / Silvester",
+      "date": "Dec 31, 2026",
+      "date_sort": "2026-12-31",
+      "location": "Europe",
+      "note": "Called Silvester in Germany, Austria, Switzerland"
+    }
+  ]
+}
