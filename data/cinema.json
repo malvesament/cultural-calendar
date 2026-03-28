@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "category": "cinema",
+    "label": "Cinema & TV",
+    "color": "#e0a840",
+    "last_updated": "2026-03-27"
+  },
+  "categories": [
+    { "id": "film-festival",   "label": "Major Film Festivals",     "color": "#e0a840" },
+    { "id": "brazil-film",     "label": "Brazilian Film Festivals", "color": "#4dcca0" },
+    { "id": "film-award",      "label": "Awards — Cinema & TV",     "color": "#e07850" },
+    { "id": "brazil-film-award","label": "Awards — Brazil",        "color": "#e07070" },
+    { "id": "film-market",     "label": "Industry & Markets",       "color": "#909088" },
+    { "id": "film-release",    "label": "Major Theatrical Releases","color": "#9080d8" },
+    { "id": "brazil-release",  "label": "Brazilian Film Releases",  "color": "#50c890" }
+  ],
+  "events": [
+    { "id": "sundance-2026", "cat": "film-festival", "name": "Sundance Film Festival", "date": "Jan 22 – Feb 1 (concluded)", "date_sort": "2026-01-22", "location": "Park City, UT, USA", "note": "Premiere US festival for independent film. Key platform for arthouse and documentary releases." },
+    { "id": "berlinale-2026", "cat": "film-festival", "name": "Berlin International Film Festival (Berlinale)", "date": "Feb 12–22 (concluded)", "date_sort": "2026-02-12", "location": "Berlin, Germany", "note": "76th edition. Golden Bear winner: Yellow Letters, dir. İlker Çatak. Includes EFM (European Film Market)." },
+    { "id": "cannes-2026", "cat": "film-festival", "name": "Cannes Film Festival (79th)", "date": "May 12–23", "date_sort": "2026-05-12", "location": "Cannes, France", "note": "79th edition. Jury president: Park Chan-wook. Host: Eye Haïdara. Includes Marché du Film (May 12–20). Country of Honour: Japan." },
+    { "id": "tribeca-2026", "cat": "film-festival", "name": "Tribeca Film Festival", "date": "Jun 3–14", "date_sort": "2026-06-03", "location": "New York, NY, USA", "note": "Major US festival showcasing independent and documentary cinema." },
+    { "id": "venice-2026", "cat": "film-festival", "name": "Venice International Film Festival (83rd)", "date": "Sep 2–12", "date_sort": "2026-09-02", "location": "Venice, Italy", "note": "Oldest film festival in the world. Golden Lion competition. Key Oscar launchpad." },
+    { "id": "tiff-2026", "cat": "film-festival", "name": "Toronto International Film Festival (TIFF)", "date": "Sep 10–20", "date_sort": "2026-09-10", "location": "Toronto, Canada", "note": "One of the world's largest public film festivals and a major Oscar launching pad. TIFF: The Market launching in 2026." },
+    { "id": "nyff-2026", "cat": "film-festival", "name": "New York Film Festival (NYFF)", "date": "Sep 26 – Oct 13", "date_sort": "2026-09-26", "location": "New York, NY, USA", "note": "Prestigious prestige film festival presented by Film at Lincoln Center." },
+    { "id": "busan-2026", "cat": "film-festival", "name": "Busan International Film Festival (BIFF)", "date": "Oct 6–15", "date_sort": "2026-10-06", "location": "Busan, South Korea", "note": "Asia's most significant international film festival." },
+    { "id": "oscars-98", "cat": "film-award", "name": "Academy Awards / Oscars (98th)", "date": "Mar 15 (concluded)", "date_sort": "2026-03-15", "location": "Dolby Theatre, Los Angeles, CA", "note": "Hosted by Conan O'Brien. Best Picture: One Battle After Another. Best Actor: Michael B. Jordan (Sinners). Best Actress: Jessie Buckley (Hamnet). Best Intl Film: The Secret Agent (Brazil)." },
+    { "id": "golden-globes-83", "cat": "film-award", "name": "Golden Globe Awards (83rd)", "date": "Jan 11 (concluded)", "date_sort": "2026-01-11", "location": "Los Angeles, CA, USA", "note": "Hosted by Nikki Glaser. The Secret Agent won Best Non-English Language Film; Wagner Moura won Best Actor Drama." },
+    { "id": "bafta-79", "cat": "film-award", "name": "BAFTA Film Awards (79th)", "date": "Feb 22 (concluded)", "date_sort": "2026-02-22", "location": "Royal Festival Hall, London, UK", "note": "Hosted by Alan Cumming. Most nominated: One Battle After Another (14 noms), Sinners (13), Hamnet (11)." },
+    { "id": "emmys-78", "cat": "film-award", "name": "Primetime Emmy Awards (78th)", "date": "Sep 14", "date_sort": "2026-09-14", "location": "USA", "note": "Annual celebration of the best in television programming. Broadcast on NBC at 8PM ET." },
+    { "id": "secret-agent-br", "cat": "brazil-release", "name": "O Agente Secreto / The Secret Agent", "date": "In theaters Nov 2025 → Netflix Brazil Mar 7", "date_sort": "2026-03-07", "location": "Brazil (worldwide)", "note": "Dir. Kleber Mendonça Filho. Wagner Moura. Won 4 Cannes awards, 2 Golden Globes, 4 Oscar nominations. 2.5M tickets sold in Brazil. Brazil's second consecutive Oscar win for Best International Film." },
+    { "id": "marche-du-film-2026", "cat": "film-market", "name": "Marché du Film — at Cannes", "date": "May 12–20", "date_sort": "2026-05-12", "location": "Cannes, France", "note": "World's #1 film market. 250+ industry events, 1,500 screenings, 4,000 projects. 140 countries. Country of Honour: Japan." },
+    { "id": "cinemacon-2026", "cat": "film-market", "name": "CinemaCon 2026", "date": "Apr 13–16", "date_sort": "2026-04-13", "location": "Caesars Palace, Las Vegas, USA", "note": "Film industry's most prominent annual gathering for cinema operators. Hosted by NATO. Studio presentations from Sony, Paramount, Walt Disney Studios." },
+    { "id": "afm-2026", "cat": "film-market", "name": "American Film Market (AFM)", "date": "Nov 10–15", "date_sort": "2026-11-10", "location": "Fairmont Century Plaza, Los Angeles, CA", "note": "Largest dedicated film market. 7,000+ professionals from 80+ countries. $1B+ in deals annually." },
+    { "id": "projeto-hail-mary", "cat": "film-release", "name": "Project Hail Mary", "date": "Mar 20", "date_sort": "2026-03-20", "location": "Worldwide", "note": "Dir. Phil Lord & Christopher Miller. Ryan Gosling, Sandra Hüller. Opened to $141M worldwide." },
+    { "id": "the-odyssey-nolan", "cat": "film-release", "name": "The Odyssey", "date": "Jul 17", "date_sort": "2026-07-17", "location": "Worldwide (IMAX)", "note": "Dir. Christopher Nolan. First film shot entirely on IMAX cameras. Cast: Matt Damon, Tom Holland, Anne Hathaway, Zendaya, Charlize Theron, Robert Pattinson." },
+    { "id": "spiderman-brand-new-day", "cat": "film-release", "name": "Spider-Man: Brand New Day", "date": "Jul 24", "date_sort": "2026-07-24", "location": "Worldwide", "note": "Tom Holland returns as Peter Parker entering college. First Spider-Man since 2021." },
+    { "id": "avengers-doomsday", "cat": "film-release", "name": "Avengers: Doomsday", "date": "Dec TBD", "date_sort": "2026-12-15", "location": "Worldwide", "note": "Marvel's biggest event since Endgame. Robert Downey Jr. as Doctor Doom. Russo Brothers directing." },
+    { "id": "dune-3", "cat": "film-release", "name": "Dune: Part Three", "date": "Dec TBD", "date_sort": "2026-12-18", "location": "Worldwide", "note": "Denis Villeneuve's final entry in the Dune saga. Zendaya central." },
+    { "id": "narnia-gerwig", "cat": "film-release", "name": "Narnia", "date": "Nov TBD", "date_sort": "2026-11-20", "location": "Worldwide", "note": "Dir. Greta Gerwig. Full chronological reboot. Netflix-backed." },
+    { "id": "hunger-games-sunrise", "cat": "film-release", "name": "The Hunger Games: Sunrise on the Reaping", "date": "Nov 20", "date_sort": "2026-11-20", "location": "Worldwide", "note": "Prequel based on Suzanne Collins's 2024 novel." },
+    { "id": "grande-otelo-2026", "cat": "brazil-film-award", "name": "Grande Prêmio do Cinema Brasileiro / Grande Otelo", "date": "Annual, TBD", "date_sort": "2026-08-01", "location": "Rio de Janeiro, Brazil", "note": "Brazil's most prestigious film award. Presented by the Brazilian Academy of Cinema. Covers features, shorts, and independent series." },
+    { "id": "gramado-film-2026", "cat": "brazil-film-award", "name": "Kikito de Ouro — Festival de Gramado (53rd)", "date": "Aug TBD", "date_sort": "2026-08-10", "location": "Gramado, RS, Brazil", "note": "The Gramado Film Festival awards. Known as 'Brazil's Oscars.' 24 competitive categories for Brazilian and Ibero-American films." }
+  ]
+}

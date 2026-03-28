@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "category": "art",
+    "label": "Art",
+    "color": "#e07070",
+    "last_updated": "2026-03-27"
+  },
+  "categories": [
+    { "id": "art-fair",      "label": "Art Fairs",          "color": "#e07070" },
+    { "id": "biennale",      "label": "Biennials & Triennials", "color": "#e0a840" },
+    { "id": "art-award",     "label": "Awards & Prizes",    "color": "#9080d8" },
+    { "id": "art-industry",  "label": "Industry Events",    "color": "#909088" },
+    { "id": "brazil-art",    "label": "Brazil Art Events",  "color": "#4dcca0" }
+  ],
+  "events": []
+}

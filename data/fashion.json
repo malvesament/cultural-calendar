@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "category": "fashion",
+    "label": "Fashion",
+    "color": "#9080d8",
+    "last_updated": "2026-03-27"
+  },
+  "categories": [
+    { "id": "fashion-week",    "label": "Fashion Weeks",          "color": "#9080d8" },
+    { "id": "fashion-award",   "label": "Awards & Prizes",        "color": "#e0a840" },
+    { "id": "fashion-fair",    "label": "Trade Shows & Markets",  "color": "#909088" },
+    { "id": "fashion-industry","label": "Industry Events",        "color": "#6ab0f5" },
+    { "id": "brazil-fashion",  "label": "Brazil Fashion Events",  "color": "#4dcca0" }
+  ],
+  "events": []
+}

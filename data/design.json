@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "category": "design",
+    "label": "Design",
+    "color": "#4dcca0",
+    "last_updated": "2026-03-27"
+  },
+  "categories": [
+    { "id": "design-fair",    "label": "Design Fairs & Weeks",    "color": "#4dcca0" },
+    { "id": "design-award",   "label": "Awards & Prizes",         "color": "#e0a840" },
+    { "id": "design-industry","label": "Industry Events",         "color": "#909088" },
+    { "id": "brazil-design",  "label": "Brazil Design Events",    "color": "#6ab0f5" }
+  ],
+  "events": []
+}

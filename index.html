@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cultural Calendar 2026</title>
+<style>
+/* ── RESET & BASE ─────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg:       #080808;
+  --surface:  #111111;
+  --surface2: #161616;
+  --border:   #222222;
+  --border2:  #2a2a2a;
+  --text:     #e8e8e6;
+  --text2:    #888880;
+  --text3:    #555550;
+  --accent:   #6ab0f5;
+  --radius:   10px;
+  --font: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'DM Mono', 'Fira Code', monospace;
+}
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* ── HEADER ───────────────────────────────────────────────────────────── */
+header {
+  background: var(--surface);
+  border-bottom: 0.5px solid var(--border);
+  position: sticky; top: 0; z-index: 100;
+}
+.header-top {
+  display: flex; align-items: center; gap: 1.5rem;
+  padding: 0.85rem 2rem;
+  border-bottom: 0.5px solid var(--border);
+}
+.logo {
+  font-size: 13px; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--text2);
+  white-space: nowrap;
+}
+.logo span { color: var(--text); }
+.header-search {
+  flex: 1; max-width: 380px;
+  position: relative;
+}
+.header-search input {
+  width: 100%; padding: 6px 12px 6px 32px;
+  background: var(--surface2); border: 0.5px solid var(--border2);
+  border-radius: 6px; color: var(--text); font-size: 13px;
+  font-family: var(--font); outline: none;
+  transition: border-color 0.15s;
+}
+.header-search input:focus { border-color: #444; }
+.header-search input::placeholder { color: var(--text3); }
+.search-icon {
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  color: var(--text3); pointer-events: none; font-size: 12px;
+}
+.header-meta { margin-left: auto; font-size: 11px; color: var(--text3); white-space: nowrap; }
+
+/* ── CATEGORY TABS ────────────────────────────────────────────────────── */
+.cat-tabs {
+  display: flex; gap: 0; padding: 0 2rem;
+  overflow-x: auto; scrollbar-width: none;
+}
+.cat-tabs::-webkit-scrollbar { display: none; }
+.cat-tab {
+  padding: 10px 16px; font-size: 12px; font-weight: 500;
+  color: var(--text3); background: none; border: none;
+  border-bottom: 2px solid transparent; cursor: pointer;
+  white-space: nowrap; letter-spacing: 0.03em;
+  transition: all 0.15s; font-family: var(--font);
+  display: flex; align-items: center; gap: 7px;
+}
+.cat-tab:hover { color: var(--text2); }
+.cat-tab.active { color: var(--text); border-bottom-color: currentColor; }
+.cat-tab .dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  opacity: 0.7; flex-shrink: 0;
+}
+.cat-tab.active .dot { opacity: 1; }
+
+/* ── FILTER BAR ───────────────────────────────────────────────────────── */
+.filter-wrap {
+  background: var(--surface); border-bottom: 0.5px solid var(--border);
+  padding: 8px 2rem; display: flex; gap: 5px; flex-wrap: wrap; align-items: center;
+}
+.filter-btn {
+  padding: 4px 11px; border-radius: 20px;
+  border: 0.5px solid var(--border2);
+  background: var(--surface2); color: var(--text3);
+  font-size: 11px; cursor: pointer; white-space: nowrap;
+  transition: all 0.12s; font-family: var(--font);
+}
+.filter-btn:hover { border-color: #3a3a3a; color: var(--text2); }
+.filter-btn.active {
+  background: rgba(255,255,255,0.07);
+  border-color: #3a3a3a; color: var(--text);
+  font-weight: 500;
+}
+.filter-separator { width: 0.5px; height: 16px; background: var(--border2); margin: 0 4px; }
+.view-toggle { display: flex; gap: 4px; margin-left: auto; }
+.view-btn {
+  padding: 4px 9px; border-radius: 6px;
+  border: 0.5px solid var(--border2);
+  background: none; color: var(--text3);
+  font-size: 11px; cursor: pointer;
+  transition: all 0.12s; font-family: var(--font);
+}
+.view-btn.active { background: var(--surface2); color: var(--text); }
+
+/* ── MAIN CONTENT ─────────────────────────────────────────────────────── */
+main { padding: 1.5rem 2rem; max-width: 1500px; margin: 0 auto; }
+.count-bar { font-size: 11px; color: var(--text3); margin-bottom: 1.25rem; }
+
+/* ── EVENT GRID ───────────────────────────────────────────────────────── */
+.section { margin-bottom: 2rem; }
+.section-title {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text3);
+  padding-bottom: 7px; margin-bottom: 10px;
+  border-bottom: 0.5px solid var(--border);
+  display: flex; align-items: center; gap: 8px;
+}
+.section-count {
+  background: var(--surface2); border: 0.5px solid var(--border2);
+  color: var(--text3); font-size: 10px; padding: 1px 6px;
+  border-radius: 10px; font-weight: 400; letter-spacing: 0;
+}
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; }
+.card {
+  background: var(--surface2); border: 0.5px solid var(--border);
+  border-radius: var(--radius); padding: 13px 15px;
+  transition: border-color 0.12s, background 0.12s;
+  cursor: default;
+}
+.card:hover { border-color: var(--border2); background: #1a1a1a; }
+.card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 5px; }
+.card-name { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.35; }
+.badge {
+  font-size: 10px; padding: 2px 7px; border-radius: 8px;
+  white-space: nowrap; flex-shrink: 0; font-weight: 500;
+  font-family: var(--font-mono);
+}
+.card-date { font-size: 11px; color: var(--text3); margin-bottom: 2px; font-family: var(--font-mono); }
+.card-location { font-size: 11px; color: var(--text3); }
+.card-note { font-size: 11px; color: var(--text3); margin-top: 7px; line-height: 1.55; font-style: italic; border-top: 0.5px solid var(--border); padding-top: 7px; }
+.empty { text-align: center; color: var(--text3); font-size: 13px; padding: 3rem; }
+.loading { text-align: center; color: var(--text3); font-size: 13px; padding: 3rem; letter-spacing: 0.05em; }
+
+/* ── CALENDAR VIEW ────────────────────────────────────────────────────── */
+.cal-wrap { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 10px; }
+.cal-month { background: var(--surface2); border: 0.5px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.cal-month-header {
+  background: var(--surface); padding: 8px 14px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text2);
+  border-bottom: 0.5px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.cal-month-count { font-size: 10px; color: var(--text3); font-weight: 400; letter-spacing: 0; }
+.cal-item {
+  padding: 7px 14px; border-bottom: 0.5px solid var(--border);
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.cal-item:last-child { border-bottom: none; }
+.cal-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+.cal-date { font-size: 10px; color: var(--text3); white-space: nowrap; min-width: 46px; padding-top: 2px; font-family: var(--font-mono); }
+.cal-body { flex: 1; min-width: 0; }
+.cal-name { font-size: 12px; color: var(--text); font-weight: 500; line-height: 1.35; }
+.cal-loc { font-size: 10px; color: var(--text3); margin-top: 1px; }
+.cal-cat { font-size: 9px; color: var(--text3); margin-top: 2px; font-family: var(--font-mono); opacity: 0.7; }
+
+/* ── MASTER CALENDAR ──────────────────────────────────────────────────── */
+.master-legend { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.5rem; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text2); }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+/* ── EMPTY STATE FOR UPCOMING CATEGORIES ──────────────────────────────── */
+.coming-soon {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  padding: 4rem 2rem; gap: 12px; text-align: center;
+}
+.coming-soon-title { font-size: 16px; font-weight: 500; color: var(--text2); }
+.coming-soon-sub { font-size: 13px; color: var(--text3); max-width: 360px; line-height: 1.6; }
+
+/* ── RESPONSIVE ───────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .header-top { padding: 0.75rem 1rem; gap: 1rem; }
+  .cat-tabs, .filter-wrap { padding-left: 1rem; padding-right: 1rem; }
+  main { padding: 1rem; }
+  .grid { grid-template-columns: 1fr; }
+  .cal-wrap { grid-template-columns: 1fr; }
+  .header-meta { display: none; }
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="logo">Cultural <span>Calendar 2026</span></div>
+    <div class="header-search">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="search" placeholder="Search events, artists, locations…" oninput="onSearch()">
+    </div>
+    <div class="header-meta" id="header-meta"></div>
+  </div>
+  <div class="cat-tabs" id="cat-tabs"></div>
+</header>
+
+<div class="filter-wrap" id="filter-wrap">
+  <div class="filter-bar" id="filter-bar"></div>
+  <div class="view-toggle">
+    <button class="view-btn active" onclick="setView('grid')" id="btn-grid">Grid</button>
+    <button class="view-btn" onclick="setView('calendar')" id="btn-cal">Calendar</button>
+    <button class="view-btn" onclick="setView('master')" id="btn-master">Master Cal</button>
+  </div>
+</div>
+
+<main id="main">
+  <div class="loading">Loading…</div>
+</main>
+
+<script>
+// ── CONFIG ──────────────────────────────────────────────────────────────
+const CATEGORY_DEFS = [
+  { id: 'music',   label: 'Music',      color: '#6ab0f5', file: 'data/music.json' },
+  { id: 'cinema',  label: 'Cinema & TV',color: '#e0a840', file: 'data/cinema.json' },
+  { id: 'art',     label: 'Art',        color: '#e07070', file: 'data/art.json' },
+  { id: 'design',  label: 'Design',     color: '#4dcca0', file: 'data/design.json' },
+  { id: 'fashion', label: 'Fashion',    color: '#9080d8', file: 'data/fashion.json' },
+];
+
+const MONTHS = ['January','February','March','April','May','June',
+                'July','August','September','October','November','December'];
+
+// ── STATE ────────────────────────────────────────────────────────────────
+let state = {
+  activeSection: 'music',
+  activeSub: 'all',
+  view: 'grid',
+  query: '',
+  data: {},       // section id → parsed JSON
+  loading: new Set(),
+};
+
+// ── BOOT ─────────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', () => {
+  buildCatTabs();
+  loadSection('music');
+});
+
+// ── DATA LOADING ──────────────────────────────────────────────────────────
+async function loadSection(id) {
+  if (state.data[id]) { activateSection(id); return; }
+  const def = CATEGORY_DEFS.find(c => c.id === id);
+  if (!def) return;
+  try {
+    const res = await fetch(def.file);
+    if (!res.ok) throw new Error(res.status);
+    state.data[id] = await res.json();
+  } catch(e) {
+    state.data[id] = { meta: { label: def.label, color: def.color }, categories: [], events: [] };
+  }
+  activateSection(id);
+}
+
+// ── SECTION ACTIVATION ────────────────────────────────────────────────────
+function activateSection(id) {
+  state.activeSection = id;
+  state.activeSub = 'all';
+  document.querySelectorAll('.cat-tab').forEach(t => t.classList.toggle('active', t.dataset.id === id));
+  buildFilterBar();
+  render();
+}
+
+// ── BUILD CAT TABS ────────────────────────────────────────────────────────
+function buildCatTabs() {
+  const el = document.getElementById('cat-tabs');
+  el.innerHTML = '';
+  CATEGORY_DEFS.forEach(def => {
+    const btn = document.createElement('button');
+    btn.className = 'cat-tab' + (def.id === 'music' ? ' active' : '');
+    btn.dataset.id = def.id;
+    btn.innerHTML = `<span class="dot" style="background:${def.color}"></span>${def.label}`;
+    btn.onclick = () => loadSection(def.id);
+    el.appendChild(btn);
+  });
+}
+
+// ── BUILD FILTER BAR ──────────────────────────────────────────────────────
+function buildFilterBar() {
+  const data = state.data[state.activeSection];
+  const bar = document.getElementById('filter-bar');
+  if (!data) { bar.innerHTML = ''; return; }
+
+  let html = `<button class="filter-btn active" data-sub="all" onclick="setSub('all')">All</button>`;
+  if (data.categories && data.categories.length) {
+    html += '<div class="filter-separator"></div>';
+    data.categories.forEach(cat => {
+      html += `<button class="filter-btn" data-sub="${cat.id}" onclick="setSub('${cat.id}')">${cat.label}</button>`;
+    });
+  }
+  bar.innerHTML = html;
+}
+
+function setSub(id) {
+  state.activeSub = id;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.sub === id));
+  render();
+}
+
+function setView(v) {
+  state.view = v;
+  ['grid','cal','master'].forEach(id => {
+    document.getElementById('btn-'+id)?.classList.toggle('active', id === v);
+  });
+  render();
+}
+
+function onSearch() {
+  state.query = document.getElementById('search').value.toLowerCase();
+  render();
+}
+
+// ── RENDER DISPATCHER ─────────────────────────────────────────────────────
+function render() {
+  if (state.view === 'master') { renderMaster(); return; }
+  const data = state.data[state.activeSection];
+  if (!data) return;
+  if (state.view === 'calendar') { renderCalendar(data); return; }
+  renderGrid(data);
+}
+
+// ── GRID VIEW ─────────────────────────────────────────────────────────────
+function renderGrid(data) {
+  const events = filterEvents(data.events || []);
+  const main = document.getElementById('main');
+
+  if (!events.length) {
+    main.innerHTML = '<div class="empty">No events match your search.</div>';
+    updateMeta(0);
+    return;
+  }
+
+  // Group by sub-category
+  const catOrder = (data.categories || []).map(c => c.id);
+  const catMap = Object.fromEntries((data.categories || []).map(c => [c.id, c]));
+  const groups = {};
+  events.forEach(e => {
+    if (!groups[e.cat]) groups[e.cat] = [];
+    groups[e.cat].push(e);
+  });
+
+  const sortedCats = Object.keys(groups).sort((a,b) => {
+    const ai = catOrder.indexOf(a), bi = catOrder.indexOf(b);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+  });
+
+  let html = '';
+  sortedCats.forEach(cat => {
+    const items = groups[cat];
+    const catDef = catMap[cat] || { label: cat, color: '#888' };
+    html += `<div class="section">
+      <div class="section-title">
+        <span class="legend-dot" style="background:${catDef.color};width:8px;height:8px;border-radius:50%;display:inline-block;"></span>
+        ${catDef.label}
+        <span class="section-count">${items.length}</span>
+      </div>
+      <div class="grid">`;
+    items.forEach(e => {
+      const badgeBg = catDef.color + '22';
+      const badgeColor = catDef.color;
+      html += `<div class="card">
+        <div class="card-top">
+          <span class="card-name">${e.name}</span>
+          <span class="badge" style="background:${badgeBg};color:${badgeColor}">${catDef.label}</span>
+        </div>
+        <div class="card-date">${e.date}</div>
+        <div class="card-location">${e.location}</div>
+        ${e.note ? `<div class="card-note">${e.note}</div>` : ''}
+      </div>`;
+    });
+    html += '</div></div>';
+  });
+
+  main.innerHTML = html;
+  updateMeta(events.length);
+}
+
+// ── CALENDAR VIEW (single category) ───────────────────────────────────────
+function renderCalendar(data) {
+  const events = filterEvents(data.events || []);
+  const catMap = Object.fromEntries((data.categories || []).map(c => [c.id, c]));
+  const sectionColor = data.meta?.color || '#888';
+
+  // Group by month
+  const byMonth = {};
+  events.forEach(e => {
+    if (!e.date_sort) return;
+    const m = parseInt(e.date_sort.split('-')[1], 10);
+    if (!byMonth[m]) byMonth[m] = [];
+    byMonth[m].push(e);
+  });
+
+  const months = Object.keys(byMonth).map(Number).sort((a,b) => a-b);
+
+  if (!months.length) {
+    document.getElementById('main').innerHTML = '<div class="empty">No dated events to display.</div>';
+    updateMeta(0); return;
+  }
+
+  let html = '<div class="cal-wrap">';
+  months.forEach(m => {
+    const items = byMonth[m].sort((a,b) => (a.date_sort||'').localeCompare(b.date_sort||''));
+    html += `<div class="cal-month">
+      <div class="cal-month-header">
+        <span>${MONTHS[m-1]}</span>
+        <span class="cal-month-count">${items.length} event${items.length!==1?'s':''}</span>
+      </div>`;
+    items.forEach(e => {
+      const day = e.date_sort ? e.date_sort.split('-')[2] : '--';
+      const catDef = catMap[e.cat] || { color: sectionColor, label: e.cat };
+      html += `<div class="cal-item">
+        <span class="cal-dot" style="background:${catDef.color}"></span>
+        <span class="cal-date">${MONTHS[m-1].slice(0,3)} ${day}</span>
+        <div class="cal-body">
+          <div class="cal-name">${e.name}</div>
+          <div class="cal-loc">${e.location}</div>
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+  });
+  html += '</div>';
+  document.getElementById('main').innerHTML = html;
+  updateMeta(events.length);
+}
+
+// ── MASTER CALENDAR (all loaded categories, color-coded) ──────────────────
+function renderMaster() {
+  const q = state.query;
+
+  // Collect all events from all loaded sections
+  const allEvents = [];
+  CATEGORY_DEFS.forEach(def => {
+    const d = state.data[def.id];
+    if (!d || !d.events) return;
+    d.events.forEach(e => {
+      if (!e.date_sort) return;
+      const name = e.name.toLowerCase();
+      const loc = (e.location||'').toLowerCase();
+      const note = (e.note||'').toLowerCase();
+      if (q && !name.includes(q) && !loc.includes(q) && !note.includes(q)) return;
+      allEvents.push({ ...e, _sectionId: def.id, _sectionLabel: def.label, _sectionColor: def.color });
+    });
+  });
+
+  // Group by month
+  const byMonth = {};
+  allEvents.forEach(e => {
+    const m = parseInt(e.date_sort.split('-')[1], 10);
+    if (!byMonth[m]) byMonth[m] = [];
+    byMonth[m].push(e);
+  });
+
+  const months = Object.keys(byMonth).map(Number).sort((a,b) => a-b);
+
+  const main = document.getElementById('main');
+
+  if (!months.length) {
+    main.innerHTML = '<div class="empty">No events loaded yet. Browse other categories first to load their data.</div>';
+    return;
+  }
+
+  // Legend
+  const loadedDefs = CATEGORY_DEFS.filter(d => state.data[d.id] && state.data[d.id].events?.length);
+  let html = '<div class="master-legend">';
+  loadedDefs.forEach(d => {
+    html += `<div class="legend-item"><span class="legend-dot" style="background:${d.color}"></span>${d.label}</div>`;
+  });
+  html += '</div><div class="cal-wrap">';
+
+  months.forEach(m => {
+    const items = byMonth[m].sort((a,b) => (a.date_sort||'').localeCompare(b.date_sort||''));
+    html += `<div class="cal-month">
+      <div class="cal-month-header">
+        <span>${MONTHS[m-1]}</span>
+        <span class="cal-month-count">${items.length}</span>
+      </div>`;
+    items.forEach(e => {
+      const day = e.date_sort.split('-')[2];
+      html += `<div class="cal-item">
+        <span class="cal-dot" style="background:${e._sectionColor}"></span>
+        <span class="cal-date">${MONTHS[m-1].slice(0,3)} ${day}</span>
+        <div class="cal-body">
+          <div class="cal-name">${e.name}</div>
+          <div class="cal-loc">${e.location}</div>
+          <div class="cal-cat">${e._sectionLabel}</div>
+        </div>
+      </div>`;
+    });
+    html += '</div>';
+  });
+
+  html += '</div>';
+  main.innerHTML = html;
+  updateMeta(allEvents.length);
+}
+
+// ── HELPERS ───────────────────────────────────────────────────────────────
+function filterEvents(events) {
+  return events.filter(e => {
+    const subOk = state.activeSub === 'all' || e.cat === state.activeSub;
+    const q = state.query;
+    const textOk = !q || [e.name, e.location, e.note, e.date].filter(Boolean)
+      .some(s => s.toLowerCase().includes(q));
+    return subOk && textOk;
+  });
+}
+
+function updateMeta(count) {
+  const section = CATEGORY_DEFS.find(d => d.id === state.activeSection);
+  document.getElementById('header-meta').textContent =
+    `${section?.label || ''} · ${count} event${count!==1?'s':''}`;
+}
+</script>
+</body>
+</html>
