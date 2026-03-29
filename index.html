@@ -465,46 +465,42 @@ function renderVenueGrid(data) {
     return;
   }
 
-  // Group by region then country
+  // Group by region
   const byRegion = {};
   venues.forEach(v => {
-    if (!byRegion[v.region]) byRegion[v.region] = {};
-    if (!byRegion[v.region][v.country]) byRegion[v.region][v.country] = [];
-    byRegion[v.region][v.country].push(v);
+    if (!byRegion[v.region]) byRegion[v.region] = [];
+    byRegion[v.region].push(v);
   });
 
   const museumsCat = (data.categories || []).find(c => c.id === 'museums') || { color: '#5098d8', label: 'Museums & Galleries' };
 
   let html = '';
   REGION_ORDER.forEach(region => {
-    const countries = byRegion[region];
-    if (!countries) return;
-    const regionCount = Object.values(countries).reduce((s, arr) => s + arr.length, 0);
+    const items = byRegion[region];
+    if (!items) return;
     html += `<div class="section">
       <div class="section-title">
         <span class="legend-dot" style="background:${museumsCat.color};width:8px;height:8px;border-radius:50%;display:inline-block;"></span>
         ${region}
-        <span class="section-count">${regionCount}</span>
-      </div>`;
-
-    Object.keys(countries).sort().forEach(country => {
-      html += `<div class="venue-country">${country}</div><div class="grid">`;
-      countries[country].forEach(v => {
-        const typeLabel = v.type === 'gallery' ? 'Gallery' : 'Museum';
-        const badgeBg = v.type === 'gallery' ? '#e0a84022' : museumsCat.color + '22';
-        const badgeColor = v.type === 'gallery' ? '#e0a840' : museumsCat.color;
-        html += `<div class="card">
+        <span class="section-count">${items.length}</span>
+      </div>
+      <div class="grid">`;
+    items.forEach(v => {
+      const typeLabel = v.type === 'gallery' ? 'Gallery' : 'Museum';
+      const badgeBg = v.type === 'gallery' ? '#e0a84022' : museumsCat.color + '22';
+      const badgeColor = v.type === 'gallery' ? '#e0a840' : museumsCat.color;
+      const tag = v.url ? 'a' : 'div';
+      const linkAttr = v.url ? ` href="${v.url}" target="_blank" rel="noopener"` : '';
+      html += `<${tag} class="card"${linkAttr}>
           <div class="card-top">
             <span class="card-name">${v.name}</span>
             <span class="badge" style="background:${badgeBg};color:${badgeColor}">${typeLabel}</span>
           </div>
           <div class="card-location">${v.city}, ${v.country}</div>
           ${v.note ? `<div class="card-note">${v.note}</div>` : ''}
-        </div>`;
-      });
-      html += '</div>';
+        </${tag}>`;
     });
-    html += '</div>';
+    html += '</div></div>';
   });
 
   main.innerHTML = html;
